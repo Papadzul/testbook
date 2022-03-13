@@ -9,11 +9,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="Kyla McConnell" />
+<meta name="author" content="Dennis E. Cabais" />
 
-<meta name="date" content="2020-12-21" />
+<meta name="date" content="2022-03-13" />
 
-<title>Intro to R</title>
+<title>MATH6200</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -371,9 +371,9 @@ pre code {
 
 
 
-<h1 class="title toc-ignore">Intro to R</h1>
-<h4 class="author">Kyla McConnell</h4>
-<h4 class="date">12/21/2020</h4>
+<h1 class="title toc-ignore">MATH6200</h1>
+<h4 class="author">Dennis E. Cabais</h4>
+<h4 class="date">2022-03-13</h4>
 
 </div>
 
@@ -419,7 +419,9 @@ pre code {
 <p>File -&gt; New File -&gt; R Markdown</p>
 <ul>
 <li><p>R-Markdown: more complex, both code and text, can also include images and some basic formatting (## for headers)</p></li>
-<li><p>YAML information at top:</p></li>
+<li><p>YAML information at top:</p>
+<hr />
+<hr /></li>
 <li><p>text in whitespace = text (unlike in an R script)</p>
 <ul>
 <li>keep notes or leave a record of your decisions</li>
@@ -431,7 +433,54 @@ pre code {
 <ul>
 <li>Can also use (#) to denote lines that are comments and shouldn’t be read as R code</li>
 </ul>
+</div>
+</div>
+<div id="packages" class="section level2">
+<h2>Packages</h2>
+<div id="installing-packages" class="section level3">
+<h3>Installing packages</h3>
+<p><em>Packages</em> - extend basic R functions to add more complicated/specialized functionality</p>
+<ul>
+<li><p>CRAN: R Consortium’s host for packages – any advanced R-programmer can make and submit their packages, any R-user can download and use them</p></li>
+<li><p>Install packages once when you first use them</p>
+<ul>
+<li>command in console (or Markdown): <code>install.packages(&quot;packagename&quot;)</code></li>
+<li>or use the panel at the lower right, under the Packages tab</li>
+</ul></li>
+</ul>
+<p>Try it now with one of the most used packages by copying the following code into your console <code>install.packages(&quot;tidyverse&quot;)</code></p>
+</div>
+<div id="using-packages" class="section level3">
+<h3>Using packages</h3>
+<ul>
+<li><p><code>library()</code> command at beginning of script to use calls from that package – will only work if you’ve already installed the package</p></li>
+<li><p>Good style: load all packages in first code block</p></li>
+<li><p>Error about not finding a package? You probably don’t have it installed.</p></li>
+</ul>
+<pre class="r"><code>library(tidyverse)</code></pre>
+<pre><code>## -- Attaching packages --------------------------------------- tidyverse 1.3.1 --</code></pre>
+<pre><code>## v ggplot2 3.3.5     v purrr   0.3.4
+## v tibble  3.1.6     v dplyr   1.0.7
+## v tidyr   1.1.4     v stringr 1.4.0
+## v readr   2.1.1     v forcats 0.5.1</code></pre>
+<pre><code>## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()</code></pre>
+<p>In summary: You need to install a package once, but need to load it (using the library command) every time you start a new R session.</p>
+<div id="try-it-out" class="section level4">
+<h4>Try it out</h4>
+<ol style="list-style-type: decimal">
+<li>Try the following command:</li>
+</ol>
+<pre class="r"><code>#beep(2)</code></pre>
+<p>What error message do you get?</p>
+<p>Now install the package “beepr” and call the package to this session with a library call somewhere above the beep command (line above is enough.) Try running the command again (make sure your speakers are on – but not too loud :D)</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Install and -load- the “cowsay” package and try the following command:</li>
+</ol>
+<pre class="r"><code>#say(what = &quot;Good luck learning R!&quot;, by = &quot;chicken&quot;)</code></pre>
 <!--chapter:end:index.Rmd-->
+</div>
 </div>
 </div>
 </div>
@@ -491,7 +540,7 @@ data1.data &lt;- data.frame(sex,math,english)
 <h2>Tidyverse</h2>
 </div>
 <div id="variables" class="section level2">
-<h2>(2) Variables</h2>
+<h2>Variables</h2>
 <div id="simple-variables" class="section level3">
 <h3>Simple variables</h3>
 <p>Variables: give name/label to output, saves it (can be used anywhere below in current script)</p>
@@ -514,7 +563,7 @@ double_cats</code></pre>
 <li><p>Commonly snake_case</p></li>
 <li><p>You can preview your current variables in the R-Studio environment pane</p></li>
 </ul>
-<div id="try-it-out" class="section level4">
+<div id="try-it-out-1" class="section level4">
 <h4>Try it out</h4>
 <ol style="list-style-type: decimal">
 <li><p>You are planning a pizza party and want to figure out how many pieces of pizza each of your guests can eat before the pizzas run out. Create a variable called “guests” and assign it to the number of guests you have at your party: 15. (First, make a code block under this question!)</p></li>
@@ -548,7 +597,7 @@ length(my_numbers)</code></pre>
 <p>You can also take a certain item from a vector using square brackets. For example, take the first item:</p>
 <pre class="r"><code>my_numbers[1]</code></pre>
 <pre><code>## [1] 12</code></pre>
-<div id="try-it-out-1" class="section level4">
+<div id="try-it-out-2" class="section level4">
 <h4>Try it out</h4>
 <ol style="list-style-type: decimal">
 <li>Make a variable called long_array and assign it the values 1, 1, 2, 2, 5, 10 (don’t forget the <code>c()</code> syntax!)</li>
@@ -561,7 +610,7 @@ length(my_numbers)</code></pre>
 </div>
 </div>
 <div id="data-types" class="section level2">
-<h2>(3) Data types</h2>
+<h2>Data types</h2>
 <ul>
 <li>Data types – how R interprets the input you give it</li>
 <li>Figure out what type something is with <code>class()</code></li>
@@ -655,7 +704,7 @@ class(fav_flavors)</code></pre>
 <pre class="r"><code>levels(fav_flavors)</code></pre>
 <pre><code>## [1] &quot;chocolate&quot;           &quot;mint chocolate chip&quot; &quot;strawberry&quot;         
 ## [4] &quot;vanilla&quot;</code></pre>
-<div id="try-it-out-2" class="section level4">
+<div id="try-it-out-3" class="section level4">
 <h4>Try it out</h4>
 <ol style="list-style-type: decimal">
 <li>Assign your name to the variable “my_name”. What data type is the variable?</li>
@@ -666,55 +715,8 @@ class(fav_flavors)</code></pre>
 </div>
 </div>
 </div>
-<div id="packages" class="section level2">
-<h2>(4) Packages</h2>
-<div id="installing-packages" class="section level3">
-<h3>Installing packages</h3>
-<p><em>Packages</em> - extend basic R functions to add more complicated/specialized functionality</p>
-<ul>
-<li><p>CRAN: R Consortium’s host for packages – any advanced R-programmer can make and submit their packages, any R-user can download and use them</p></li>
-<li><p>Install packages once when you first use them</p>
-<ul>
-<li>command in console (or Markdown): <code>install.packages(&quot;packagename&quot;)</code></li>
-<li>or use the panel at the lower right, under the Packages tab</li>
-</ul></li>
-</ul>
-<p>Try it now with one of the most used packages by copying the following code into your console <code>install.packages(&quot;tidyverse&quot;)</code></p>
-</div>
-<div id="using-packages" class="section level3">
-<h3>Using packages</h3>
-<ul>
-<li><p><code>library()</code> command at beginning of script to use calls from that package – will only work if you’ve already installed the package</p></li>
-<li><p>Good style: load all packages in first code block</p></li>
-<li><p>Error about not finding a package? You probably don’t have it installed.</p></li>
-</ul>
-<pre class="r"><code>library(tidyverse)</code></pre>
-<pre><code>## -- Attaching packages --------------------------------------- tidyverse 1.3.1 --</code></pre>
-<pre><code>## v ggplot2 3.3.5     v purrr   0.3.4
-## v tibble  3.1.6     v dplyr   1.0.7
-## v tidyr   1.1.4     v stringr 1.4.0
-## v readr   2.1.1     v forcats 0.5.1</code></pre>
-<pre><code>## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
-## x dplyr::filter() masks stats::filter()
-## x dplyr::lag()    masks stats::lag()</code></pre>
-<p>In summary: You need to install a package once, but need to load it (using the library command) every time you start a new R session.</p>
-<div id="try-it-out-3" class="section level4">
-<h4>Try it out</h4>
-<ol style="list-style-type: decimal">
-<li>Try the following command:</li>
-</ol>
-<pre class="r"><code>#beep(2)</code></pre>
-<p>What error message do you get?</p>
-<p>Now install the package “beepr” and call the package to this session with a library call somewhere above the beep command (line above is enough.) Try running the command again (make sure your speakers are on – but not too loud :D)</p>
-<ol start="2" style="list-style-type: decimal">
-<li>Install and -load- the “cowsay” package and try the following command:</li>
-</ol>
-<pre class="r"><code>#say(what = &quot;Good luck learning R!&quot;, by = &quot;chicken&quot;)</code></pre>
-</div>
-</div>
-</div>
 <div id="reading-in-data" class="section level2">
-<h2>(5) Reading in data</h2>
+<h2>Reading in data</h2>
 <ul>
 <li><p>What type of file are you working with?</p>
 <ul>
@@ -768,7 +770,7 @@ class(fav_flavors)</code></pre>
 ## i Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
 </div>
 <div id="exploring-your-data" class="section level2">
-<h2>(6) Exploring your data</h2>
+<h2>Exploring your data</h2>
 <p>Now you have a data file read in, but how do you see what’s in it?</p>
 <p><code>head()</code>: shows first six rows</p>
 <pre class="r"><code>head(jump_data)</code></pre>
@@ -810,7 +812,7 @@ class(fav_flavors)</code></pre>
 </div>
 </div>
 <div id="columns" class="section level2">
-<h2>(7) Columns</h2>
+<h2>Columns</h2>
 <ul>
 <li>specific column call with dataframe_name$column_name</li>
 </ul>
@@ -891,7 +893,7 @@ class(penguins$species)</code></pre>
 </div>
 </div>
 <div id="the-pipe-operator" class="section level2">
-<h2>(8) The pipe operator</h2>
+<h2>The pipe operator</h2>
 <p>The pipe %&gt;% is a command from the magrittr package (which is included in tidyverse, so no need to load it explicitly). When the pipe is used, the output from the first line is automatically passed to the second line. Specifically, the output is used as the first argument of the next command. Use Control + Shift + M to automatically insert %&gt;%</p>
 <pre class="r"><code>summary(penguins)</code></pre>
 <pre><code>##       species       island          bill_length_mm  bill_depth_mm  
@@ -955,7 +957,7 @@ penguins %&gt;%
 </div>
 </div>
 <div id="conclusion" class="section level2">
-<h2>(9) Conclusion</h2>
+<h2>Conclusion</h2>
 <ul>
 <li>Installed R, R-Studio</li>
 <li>R-Markdown</li>

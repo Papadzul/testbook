@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Week 2 Data Cleaning / Wrangling | Intro to R</title>
-  <meta name="description" content="Week 2 Data Cleaning / Wrangling | Intro to R" />
+  <title>Week 2 Data Cleaning / Wrangling | MATH6200</title>
+  <meta name="description" content="Week 2 Data Cleaning / Wrangling | MATH6200" />
   <meta name="generator" content="bookdown 0.24.4 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Week 2 Data Cleaning / Wrangling | Intro to R" />
+  <meta property="og:title" content="Week 2 Data Cleaning / Wrangling | MATH6200" />
   <meta property="og:type" content="book" />
   
   <meta property="og:image" content="/cover.png" />
@@ -16,15 +16,15 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Week 2 Data Cleaning / Wrangling | Intro to R" />
+  <meta name="twitter:title" content="Week 2 Data Cleaning / Wrangling | MATH6200" />
   
   
   <meta name="twitter:image" content="/cover.png" />
 
-<meta name="author" content="Kyla McConnell" />
+<meta name="author" content="Dennis E. Cabais" />
 
 
-<meta name="date" content="2020-12-21" />
+<meta name="date" content="2022-03-13" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -145,6 +145,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#r-script-.r"><i class="fa fa-check"></i>R script (.R)</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#r-markdown-file-.rmd"><i class="fa fa-check"></i>R-Markdown file (.Rmd)</a></li>
 </ul></li>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#packages"><i class="fa fa-check"></i><b>0.1</b> Packages</a>
+<ul>
+<li class="chapter" data-level="0.1.1" data-path="index.html"><a href="index.html#installing-packages"><i class="fa fa-check"></i><b>0.1.1</b> Installing packages</a></li>
+<li class="chapter" data-level="0.1.2" data-path="index.html"><a href="index.html#using-packages"><i class="fa fa-check"></i><b>0.1.2</b> Using packages</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="data-in-r.html"><a href="data-in-r.html"><i class="fa fa-check"></i><b>1</b> Data in R</a>
 <ul>
@@ -159,12 +164,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html"><i class="fa fa-check"></i><b>2</b> Data Cleaning / Wrangling</a>
 <ul>
 <li class="chapter" data-level="2.1" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#tidyverse"><i class="fa fa-check"></i><b>2.1</b> Tidyverse</a></li>
-<li class="chapter" data-level="2.2" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#variables"><i class="fa fa-check"></i><b>2.2</b> (2) Variables</a>
+<li class="chapter" data-level="2.2" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#variables"><i class="fa fa-check"></i><b>2.2</b> Variables</a>
 <ul>
 <li class="chapter" data-level="2.2.1" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#simple-variables"><i class="fa fa-check"></i><b>2.2.1</b> Simple variables</a></li>
 <li class="chapter" data-level="2.2.2" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#vectors"><i class="fa fa-check"></i><b>2.2.2</b> Vectors</a></li>
 </ul></li>
-<li class="chapter" data-level="2.3" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#data-types"><i class="fa fa-check"></i><b>2.3</b> (3) Data types</a>
+<li class="chapter" data-level="2.3" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#data-types"><i class="fa fa-check"></i><b>2.3</b> Data types</a>
 <ul>
 <li class="chapter" data-level="2.3.1" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#numeric"><i class="fa fa-check"></i><b>2.3.1</b> Numeric</a></li>
 <li class="chapter" data-level="2.3.2" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#integer"><i class="fa fa-check"></i><b>2.3.2</b> Integer</a></li>
@@ -172,24 +177,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.3.4" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#logical"><i class="fa fa-check"></i><b>2.3.4</b> Logical</a></li>
 <li class="chapter" data-level="2.3.5" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#factor"><i class="fa fa-check"></i><b>2.3.5</b> Factor</a></li>
 </ul></li>
-<li class="chapter" data-level="2.4" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#packages"><i class="fa fa-check"></i><b>2.4</b> (4) Packages</a>
+<li class="chapter" data-level="2.4" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#reading-in-data"><i class="fa fa-check"></i><b>2.4</b> Reading in data</a></li>
+<li class="chapter" data-level="2.5" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#exploring-your-data"><i class="fa fa-check"></i><b>2.5</b> Exploring your data</a></li>
+<li class="chapter" data-level="2.6" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#columns"><i class="fa fa-check"></i><b>2.6</b> Columns</a>
 <ul>
-<li class="chapter" data-level="2.4.1" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#installing-packages"><i class="fa fa-check"></i><b>2.4.1</b> Installing packages</a></li>
-<li class="chapter" data-level="2.4.2" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#using-packages"><i class="fa fa-check"></i><b>2.4.2</b> Using packages</a></li>
+<li class="chapter" data-level="2.6.1" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#descriptive-stats"><i class="fa fa-check"></i><b>2.6.1</b> Descriptive stats</a></li>
+<li class="chapter" data-level="2.6.2" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#categorical-columns"><i class="fa fa-check"></i><b>2.6.2</b> Categorical columns</a></li>
 </ul></li>
-<li class="chapter" data-level="2.5" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#reading-in-data"><i class="fa fa-check"></i><b>2.5</b> (5) Reading in data</a></li>
-<li class="chapter" data-level="2.6" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#exploring-your-data"><i class="fa fa-check"></i><b>2.6</b> (6) Exploring your data</a></li>
-<li class="chapter" data-level="2.7" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#columns"><i class="fa fa-check"></i><b>2.7</b> (7) Columns</a>
+<li class="chapter" data-level="2.7" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#the-pipe-operator"><i class="fa fa-check"></i><b>2.7</b> The pipe operator</a></li>
+<li class="chapter" data-level="2.8" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#conclusion"><i class="fa fa-check"></i><b>2.8</b> Conclusion</a>
 <ul>
-<li class="chapter" data-level="2.7.1" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#descriptive-stats"><i class="fa fa-check"></i><b>2.7.1</b> Descriptive stats</a></li>
-<li class="chapter" data-level="2.7.2" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#categorical-columns"><i class="fa fa-check"></i><b>2.7.2</b> Categorical columns</a></li>
+<li class="chapter" data-level="2.8.1" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#reading"><i class="fa fa-check"></i><b>2.8.1</b> Reading</a></li>
 </ul></li>
-<li class="chapter" data-level="2.8" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#the-pipe-operator"><i class="fa fa-check"></i><b>2.8</b> (8) The pipe operator</a></li>
-<li class="chapter" data-level="2.9" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#conclusion"><i class="fa fa-check"></i><b>2.9</b> (9) Conclusion</a>
-<ul>
-<li class="chapter" data-level="2.9.1" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#reading"><i class="fa fa-check"></i><b>2.9.1</b> Reading</a></li>
-</ul></li>
-<li class="chapter" data-level="2.10" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#deplyr"><i class="fa fa-check"></i><b>2.10</b> Deplyr</a></li>
+<li class="chapter" data-level="2.9" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#deplyr"><i class="fa fa-check"></i><b>2.9</b> Deplyr</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="data-manipulation.html"><a href="data-manipulation.html"><i class="fa fa-check"></i><b>3</b> Data Manipulation</a>
 <ul>
@@ -222,7 +222,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Intro to R</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">MATH6200</a>
           </h1>
         </div>
 
@@ -236,30 +236,30 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">2.1</span> Tidyverse</h2>
 </div>
 <div id="variables" class="section level2" number="2.2">
-<h2><span class="header-section-number">2.2</span> (2) Variables</h2>
+<h2><span class="header-section-number">2.2</span> Variables</h2>
 <div id="simple-variables" class="section level3" number="2.2.1">
 <h3><span class="header-section-number">2.2.1</span> Simple variables</h3>
 <p>Variables: give name/label to output, saves it (can be used anywhere below in current script)</p>
 <p>name_of_variable &lt;- code</p>
 <p>For example:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="data-cleaning-wrangling.html#cb10-1" aria-hidden="true" tabindex="-1"></a>num_cats <span class="ot">&lt;-</span> <span class="dv">12</span></span>
-<span id="cb10-2"><a href="data-cleaning-wrangling.html#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-3"><a href="data-cleaning-wrangling.html#cb10-3" aria-hidden="true" tabindex="-1"></a>num_cats <span class="sc">*</span> <span class="dv">3</span></span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="data-cleaning-wrangling.html#cb16-1" aria-hidden="true" tabindex="-1"></a>num_cats <span class="ot">&lt;-</span> <span class="dv">12</span></span>
+<span id="cb16-2"><a href="data-cleaning-wrangling.html#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-3"><a href="data-cleaning-wrangling.html#cb16-3" aria-hidden="true" tabindex="-1"></a>num_cats <span class="sc">*</span> <span class="dv">3</span></span></code></pre></div>
 <pre><code>## [1] 36</code></pre>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="data-cleaning-wrangling.html#cb12-1" aria-hidden="true" tabindex="-1"></a>num_dogs <span class="ot">&lt;-</span> <span class="dv">7</span></span>
-<span id="cb12-2"><a href="data-cleaning-wrangling.html#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-3"><a href="data-cleaning-wrangling.html#cb12-3" aria-hidden="true" tabindex="-1"></a>num_pets <span class="ot">&lt;-</span> num_cats <span class="sc">+</span> num_dogs</span></code></pre></div>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="data-cleaning-wrangling.html#cb13-1" aria-hidden="true" tabindex="-1"></a>num_pets</span></code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="data-cleaning-wrangling.html#cb18-1" aria-hidden="true" tabindex="-1"></a>num_dogs <span class="ot">&lt;-</span> <span class="dv">7</span></span>
+<span id="cb18-2"><a href="data-cleaning-wrangling.html#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="data-cleaning-wrangling.html#cb18-3" aria-hidden="true" tabindex="-1"></a>num_pets <span class="ot">&lt;-</span> num_cats <span class="sc">+</span> num_dogs</span></code></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="data-cleaning-wrangling.html#cb19-1" aria-hidden="true" tabindex="-1"></a>num_pets</span></code></pre></div>
 <pre><code>## [1] 19</code></pre>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="data-cleaning-wrangling.html#cb15-1" aria-hidden="true" tabindex="-1"></a>double_cats <span class="ot">&lt;-</span> num_cats <span class="sc">*</span> <span class="dv">2</span></span>
-<span id="cb15-2"><a href="data-cleaning-wrangling.html#cb15-2" aria-hidden="true" tabindex="-1"></a>double_cats</span></code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="data-cleaning-wrangling.html#cb21-1" aria-hidden="true" tabindex="-1"></a>double_cats <span class="ot">&lt;-</span> num_cats <span class="sc">*</span> <span class="dv">2</span></span>
+<span id="cb21-2"><a href="data-cleaning-wrangling.html#cb21-2" aria-hidden="true" tabindex="-1"></a>double_cats</span></code></pre></div>
 <pre><code>## [1] 24</code></pre>
 <ul>
 <li><p>Variables are case sensitive (caps/lowercase matters) and can’t include spaces.</p></li>
 <li><p>Commonly snake_case</p></li>
 <li><p>You can preview your current variables in the R-Studio environment pane</p></li>
 </ul>
-<div id="try-it-out" class="section level4" number="2.2.1.1">
+<div id="try-it-out-1" class="section level4" number="2.2.1.1">
 <h4><span class="header-section-number">2.2.1.1</span> Try it out</h4>
 <ol style="list-style-type: decimal">
 <li><p>You are planning a pizza party and want to figure out how many pieces of pizza each of your guests can eat before the pizzas run out. Create a variable called “guests” and assign it to the number of guests you have at your party: 15. (First, make a code block under this question!)</p></li>
@@ -276,25 +276,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li>command <code>length()</code> returns number of items in the vector</li>
 </ul>
-<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="data-cleaning-wrangling.html#cb17-1" aria-hidden="true" tabindex="-1"></a>my_numbers <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">12</span>, <span class="dv">14</span>, <span class="dv">26</span>, <span class="dv">57</span>, <span class="dv">82</span>)</span>
-<span id="cb17-2"><a href="data-cleaning-wrangling.html#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-3"><a href="data-cleaning-wrangling.html#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(my_numbers)</span></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="data-cleaning-wrangling.html#cb23-1" aria-hidden="true" tabindex="-1"></a>my_numbers <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">12</span>, <span class="dv">14</span>, <span class="dv">26</span>, <span class="dv">57</span>, <span class="dv">82</span>)</span>
+<span id="cb23-2"><a href="data-cleaning-wrangling.html#cb23-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-3"><a href="data-cleaning-wrangling.html#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(my_numbers)</span></code></pre></div>
 <pre><code>## [1] 5</code></pre>
 <p>You can also do “vector-wise” operations:</p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="data-cleaning-wrangling.html#cb19-1" aria-hidden="true" tabindex="-1"></a>my_numbers <span class="sc">+</span> <span class="dv">2</span></span></code></pre></div>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="data-cleaning-wrangling.html#cb25-1" aria-hidden="true" tabindex="-1"></a>my_numbers <span class="sc">+</span> <span class="dv">2</span></span></code></pre></div>
 <pre><code>## [1] 14 16 28 59 84</code></pre>
-<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="data-cleaning-wrangling.html#cb21-1" aria-hidden="true" tabindex="-1"></a>my_numbers <span class="sc">^</span> <span class="dv">2</span></span></code></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="data-cleaning-wrangling.html#cb27-1" aria-hidden="true" tabindex="-1"></a>my_numbers <span class="sc">^</span> <span class="dv">2</span></span></code></pre></div>
 <pre><code>## [1]  144  196  676 3249 6724</code></pre>
-<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="data-cleaning-wrangling.html#cb23-1" aria-hidden="true" tabindex="-1"></a>my_numbers <span class="sc">/</span> <span class="dv">10</span></span></code></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="data-cleaning-wrangling.html#cb29-1" aria-hidden="true" tabindex="-1"></a>my_numbers <span class="sc">/</span> <span class="dv">10</span></span></code></pre></div>
 <pre><code>## [1] 1.2 1.4 2.6 5.7 8.2</code></pre>
 <p>Mathematical operation is “broadcast” to each item</p>
 <p>Add/subtract/multiply/divide a vector by another vector: items matched up one at a time in a loop</p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="data-cleaning-wrangling.html#cb25-1" aria-hidden="true" tabindex="-1"></a>my_numbers <span class="sc">+</span> my_numbers</span></code></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="data-cleaning-wrangling.html#cb31-1" aria-hidden="true" tabindex="-1"></a>my_numbers <span class="sc">+</span> my_numbers</span></code></pre></div>
 <pre><code>## [1]  24  28  52 114 164</code></pre>
 <p>You can also take a certain item from a vector using square brackets. For example, take the first item:</p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="data-cleaning-wrangling.html#cb27-1" aria-hidden="true" tabindex="-1"></a>my_numbers[<span class="dv">1</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="data-cleaning-wrangling.html#cb33-1" aria-hidden="true" tabindex="-1"></a>my_numbers[<span class="dv">1</span>]</span></code></pre></div>
 <pre><code>## [1] 12</code></pre>
-<div id="try-it-out-1" class="section level4" number="2.2.2.1">
+<div id="try-it-out-2" class="section level4" number="2.2.2.1">
 <h4><span class="header-section-number">2.2.2.1</span> Try it out</h4>
 <ol style="list-style-type: decimal">
 <li>Make a variable called long_array and assign it the values 1, 1, 2, 2, 5, 10 (don’t forget the <code>c()</code> syntax!)</li>
@@ -307,22 +307,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 <div id="data-types" class="section level2" number="2.3">
-<h2><span class="header-section-number">2.3</span> (3) Data types</h2>
+<h2><span class="header-section-number">2.3</span> Data types</h2>
 <ul>
 <li>Data types – how R interprets the input you give it</li>
 <li>Figure out what type something is with <code>class()</code></li>
 </ul>
 <div id="numeric" class="section level3" number="2.3.1">
 <h3><span class="header-section-number">2.3.1</span> Numeric</h3>
-<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="data-cleaning-wrangling.html#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="fl">8.8</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="data-cleaning-wrangling.html#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="fl">8.8</span>)</span></code></pre></div>
 <pre><code>## [1] &quot;numeric&quot;</code></pre>
-<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="data-cleaning-wrangling.html#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="fl">4.5113</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="data-cleaning-wrangling.html#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="fl">4.5113</span>)</span></code></pre></div>
 <pre><code>## [1] &quot;numeric&quot;</code></pre>
-<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="data-cleaning-wrangling.html#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="dv">2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="data-cleaning-wrangling.html#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="dv">2</span>)</span></code></pre></div>
 <pre><code>## [1] &quot;numeric&quot;</code></pre>
-<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="data-cleaning-wrangling.html#cb35-1" aria-hidden="true" tabindex="-1"></a>fav_number <span class="ot">&lt;-</span> <span class="dv">12</span></span>
-<span id="cb35-2"><a href="data-cleaning-wrangling.html#cb35-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-3"><a href="data-cleaning-wrangling.html#cb35-3" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(fav_number)</span></code></pre></div>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="data-cleaning-wrangling.html#cb41-1" aria-hidden="true" tabindex="-1"></a>fav_number <span class="ot">&lt;-</span> <span class="dv">12</span></span>
+<span id="cb41-2"><a href="data-cleaning-wrangling.html#cb41-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-3"><a href="data-cleaning-wrangling.html#cb41-3" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(fav_number)</span></code></pre></div>
 <pre><code>## [1] &quot;numeric&quot;</code></pre>
 <ul>
 <li>Numbers generally treated as <em>numeric</em> -&gt; can include decimals</li>
@@ -336,13 +336,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>this will truncate the decimal (cut it off), not round</li>
 </ul></li>
 </ul>
-<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="data-cleaning-wrangling.html#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">as.integer</span>(<span class="fl">8.8</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="data-cleaning-wrangling.html#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="fu">as.integer</span>(<span class="fl">8.8</span>)</span></code></pre></div>
 <pre><code>## [1] 8</code></pre>
-<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="data-cleaning-wrangling.html#cb39-1" aria-hidden="true" tabindex="-1"></a>integer_variable <span class="ot">&lt;-</span> <span class="fu">as.integer</span>(<span class="fl">8.8</span>)</span>
-<span id="cb39-2"><a href="data-cleaning-wrangling.html#cb39-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb39-3"><a href="data-cleaning-wrangling.html#cb39-3" aria-hidden="true" tabindex="-1"></a>integer_variable</span></code></pre></div>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="data-cleaning-wrangling.html#cb45-1" aria-hidden="true" tabindex="-1"></a>integer_variable <span class="ot">&lt;-</span> <span class="fu">as.integer</span>(<span class="fl">8.8</span>)</span>
+<span id="cb45-2"><a href="data-cleaning-wrangling.html#cb45-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-3"><a href="data-cleaning-wrangling.html#cb45-3" aria-hidden="true" tabindex="-1"></a>integer_variable</span></code></pre></div>
 <pre><code>## [1] 8</code></pre>
-<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="data-cleaning-wrangling.html#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(integer_variable)</span></code></pre></div>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="data-cleaning-wrangling.html#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(integer_variable)</span></code></pre></div>
 <pre><code>## [1] &quot;integer&quot;</code></pre>
 </div>
 <div id="character" class="section level3" number="2.3.3">
@@ -350,13 +350,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li><em>character</em> is text, always enclosed in either double or single quotation marks</li>
 </ul>
-<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="data-cleaning-wrangling.html#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="st">&quot;hello&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="data-cleaning-wrangling.html#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="st">&quot;hello&quot;</span>)</span></code></pre></div>
 <pre><code>## [1] &quot;character&quot;</code></pre>
 <p>Uncomment the following line by deleting the hashtag (#). Check out the error here – it may sound confusing but try to identify what it is telling you.</p>
-<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="data-cleaning-wrangling.html#cb45-1" aria-hidden="true" tabindex="-1"></a>my_word <span class="ot">&lt;-</span> <span class="st">&quot;hello&quot;</span></span>
-<span id="cb45-2"><a href="data-cleaning-wrangling.html#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(my_word)</span></code></pre></div>
+<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="data-cleaning-wrangling.html#cb51-1" aria-hidden="true" tabindex="-1"></a>my_word <span class="ot">&lt;-</span> <span class="st">&quot;hello&quot;</span></span>
+<span id="cb51-2"><a href="data-cleaning-wrangling.html#cb51-2" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(my_word)</span></code></pre></div>
 <pre><code>## [1] &quot;character&quot;</code></pre>
-<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="data-cleaning-wrangling.html#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="co">#my_word + 2</span></span></code></pre></div>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="data-cleaning-wrangling.html#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="co">#my_word + 2</span></span></code></pre></div>
 <p>If you forget the quotes, you’ll also get an error (have to remove the comment character here to see it!)</p>
 </div>
 <div id="logical" class="section level3" number="2.3.4">
@@ -368,15 +368,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 test if something is not identical with !=
 test if something is greater than with &gt; or less than with &lt;
 or try greater than or equals to &gt;= or less than or equal to with &lt;=</p>
-<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="data-cleaning-wrangling.html#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="dv">7</span> <span class="sc">&lt;</span> <span class="dv">8</span></span></code></pre></div>
+<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="data-cleaning-wrangling.html#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="dv">7</span> <span class="sc">&lt;</span> <span class="dv">8</span></span></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
-<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="data-cleaning-wrangling.html#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;dog&quot;</span> <span class="sc">==</span> <span class="st">&quot;dogs&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="data-cleaning-wrangling.html#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;dog&quot;</span> <span class="sc">==</span> <span class="st">&quot;dogs&quot;</span></span></code></pre></div>
 <pre><code>## [1] FALSE</code></pre>
-<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="data-cleaning-wrangling.html#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="fl">8.8</span> <span class="sc">&gt;=</span> <span class="fl">5.6</span></span></code></pre></div>
+<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="data-cleaning-wrangling.html#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="fl">8.8</span> <span class="sc">&gt;=</span> <span class="fl">5.6</span></span></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
-<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="data-cleaning-wrangling.html#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;seven&quot;</span> <span class="sc">==</span> <span class="dv">7</span></span></code></pre></div>
+<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="data-cleaning-wrangling.html#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;seven&quot;</span> <span class="sc">==</span> <span class="dv">7</span></span></code></pre></div>
 <pre><code>## [1] FALSE</code></pre>
-<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="data-cleaning-wrangling.html#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="st">&quot;seven&quot;</span> <span class="sc">==</span> <span class="dv">7</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="data-cleaning-wrangling.html#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(<span class="st">&quot;seven&quot;</span> <span class="sc">==</span> <span class="dv">7</span>)</span></code></pre></div>
 <pre><code>## [1] &quot;logical&quot;</code></pre>
 </div>
 <div id="factor" class="section level3" number="2.3.5">
@@ -385,26 +385,26 @@ or try greater than or equals to &gt;= or less than or equal to with &lt;=</p>
 <ul>
 <li>Allows you to represent text as group labels, that multiple items can belong to</li>
 </ul>
-<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="data-cleaning-wrangling.html#cb58-1" aria-hidden="true" tabindex="-1"></a>fav_flavors <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;chocolate&quot;</span>, <span class="st">&quot;vanilla&quot;</span>, <span class="st">&quot;strawberry&quot;</span>, <span class="st">&quot;strawberry&quot;</span>, <span class="st">&quot;chocolate&quot;</span>, <span class="st">&quot;mint chocolate chip&quot;</span>, <span class="st">&quot;chocolate&quot;</span>,  <span class="st">&quot;vanilla&quot;</span>, <span class="st">&quot;strawberry&quot;</span>, <span class="st">&quot;chocolate&quot;</span>)</span>
-<span id="cb58-2"><a href="data-cleaning-wrangling.html#cb58-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb58-3"><a href="data-cleaning-wrangling.html#cb58-3" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(fav_flavors)</span></code></pre></div>
+<div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb64-1"><a href="data-cleaning-wrangling.html#cb64-1" aria-hidden="true" tabindex="-1"></a>fav_flavors <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;chocolate&quot;</span>, <span class="st">&quot;vanilla&quot;</span>, <span class="st">&quot;strawberry&quot;</span>, <span class="st">&quot;strawberry&quot;</span>, <span class="st">&quot;chocolate&quot;</span>, <span class="st">&quot;mint chocolate chip&quot;</span>, <span class="st">&quot;chocolate&quot;</span>,  <span class="st">&quot;vanilla&quot;</span>, <span class="st">&quot;strawberry&quot;</span>, <span class="st">&quot;chocolate&quot;</span>)</span>
+<span id="cb64-2"><a href="data-cleaning-wrangling.html#cb64-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb64-3"><a href="data-cleaning-wrangling.html#cb64-3" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(fav_flavors)</span></code></pre></div>
 <pre><code>## [1] &quot;character&quot;</code></pre>
-<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="data-cleaning-wrangling.html#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fav_flavors)</span></code></pre></div>
+<div class="sourceCode" id="cb66"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb66-1"><a href="data-cleaning-wrangling.html#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fav_flavors)</span></code></pre></div>
 <pre><code>##    Length     Class      Mode 
 ##        10 character character</code></pre>
 <p>Change to factor with <code>as.factor()</code></p>
-<div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="data-cleaning-wrangling.html#cb62-1" aria-hidden="true" tabindex="-1"></a>fav_flavors <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(fav_flavors)</span>
-<span id="cb62-2"><a href="data-cleaning-wrangling.html#cb62-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb62-3"><a href="data-cleaning-wrangling.html#cb62-3" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(fav_flavors)</span></code></pre></div>
+<div class="sourceCode" id="cb68"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb68-1"><a href="data-cleaning-wrangling.html#cb68-1" aria-hidden="true" tabindex="-1"></a>fav_flavors <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(fav_flavors)</span>
+<span id="cb68-2"><a href="data-cleaning-wrangling.html#cb68-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb68-3"><a href="data-cleaning-wrangling.html#cb68-3" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(fav_flavors)</span></code></pre></div>
 <pre><code>## [1] &quot;factor&quot;</code></pre>
-<div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb64-1"><a href="data-cleaning-wrangling.html#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fav_flavors)</span></code></pre></div>
+<div class="sourceCode" id="cb70"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb70-1"><a href="data-cleaning-wrangling.html#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fav_flavors)</span></code></pre></div>
 <pre><code>##           chocolate mint chocolate chip          strawberry             vanilla 
 ##                   4                   1                   3                   2</code></pre>
 <p>Can also see the possible groupings of a factor using <code>levels()</code></p>
-<div class="sourceCode" id="cb66"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb66-1"><a href="data-cleaning-wrangling.html#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(fav_flavors)</span></code></pre></div>
+<div class="sourceCode" id="cb72"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb72-1"><a href="data-cleaning-wrangling.html#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(fav_flavors)</span></code></pre></div>
 <pre><code>## [1] &quot;chocolate&quot;           &quot;mint chocolate chip&quot; &quot;strawberry&quot;         
 ## [4] &quot;vanilla&quot;</code></pre>
-<div id="try-it-out-2" class="section level4" number="2.3.5.1">
+<div id="try-it-out-3" class="section level4" number="2.3.5.1">
 <h4><span class="header-section-number">2.3.5.1</span> Try it out</h4>
 <ol style="list-style-type: decimal">
 <li>Assign your name to the variable “my_name”. What data type is the variable?</li>
@@ -415,55 +415,8 @@ or try greater than or equals to &gt;= or less than or equal to with &lt;=</p>
 </div>
 </div>
 </div>
-<div id="packages" class="section level2" number="2.4">
-<h2><span class="header-section-number">2.4</span> (4) Packages</h2>
-<div id="installing-packages" class="section level3" number="2.4.1">
-<h3><span class="header-section-number">2.4.1</span> Installing packages</h3>
-<p><em>Packages</em> - extend basic R functions to add more complicated/specialized functionality</p>
-<ul>
-<li><p>CRAN: R Consortium’s host for packages – any advanced R-programmer can make and submit their packages, any R-user can download and use them</p></li>
-<li><p>Install packages once when you first use them</p>
-<ul>
-<li>command in console (or Markdown): <code>install.packages("packagename")</code></li>
-<li>or use the panel at the lower right, under the Packages tab</li>
-</ul></li>
-</ul>
-<p>Try it now with one of the most used packages by copying the following code into your console <code>install.packages("tidyverse")</code></p>
-</div>
-<div id="using-packages" class="section level3" number="2.4.2">
-<h3><span class="header-section-number">2.4.2</span> Using packages</h3>
-<ul>
-<li><p><code>library()</code> command at beginning of script to use calls from that package – will only work if you’ve already installed the package</p></li>
-<li><p>Good style: load all packages in first code block</p></li>
-<li><p>Error about not finding a package? You probably don’t have it installed.</p></li>
-</ul>
-<div class="sourceCode" id="cb68"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb68-1"><a href="data-cleaning-wrangling.html#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div>
-<pre><code>## -- Attaching packages --------------------------------------- tidyverse 1.3.1 --</code></pre>
-<pre><code>## v ggplot2 3.3.5     v purrr   0.3.4
-## v tibble  3.1.6     v dplyr   1.0.7
-## v tidyr   1.1.4     v stringr 1.4.0
-## v readr   2.1.1     v forcats 0.5.1</code></pre>
-<pre><code>## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
-## x dplyr::filter() masks stats::filter()
-## x dplyr::lag()    masks stats::lag()</code></pre>
-<p>In summary: You need to install a package once, but need to load it (using the library command) every time you start a new R session.</p>
-<div id="try-it-out-3" class="section level4" number="2.4.2.1">
-<h4><span class="header-section-number">2.4.2.1</span> Try it out</h4>
-<ol style="list-style-type: decimal">
-<li>Try the following command:</li>
-</ol>
-<div class="sourceCode" id="cb72"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb72-1"><a href="data-cleaning-wrangling.html#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="co">#beep(2)</span></span></code></pre></div>
-<p>What error message do you get?</p>
-<p>Now install the package “beepr” and call the package to this session with a library call somewhere above the beep command (line above is enough.) Try running the command again (make sure your speakers are on – but not too loud :D)</p>
-<ol start="2" style="list-style-type: decimal">
-<li>Install and -load- the “cowsay” package and try the following command:</li>
-</ol>
-<div class="sourceCode" id="cb73"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb73-1"><a href="data-cleaning-wrangling.html#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="co">#say(what = &quot;Good luck learning R!&quot;, by = &quot;chicken&quot;)</span></span></code></pre></div>
-</div>
-</div>
-</div>
-<div id="reading-in-data" class="section level2" number="2.5">
-<h2><span class="header-section-number">2.5</span> (5) Reading in data</h2>
+<div id="reading-in-data" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> Reading in data</h2>
 <ul>
 <li><p>What type of file are you working with?</p>
 <ul>
@@ -516,8 +469,8 @@ or try greater than or equals to &gt;= or less than or equal to with &lt;=</p>
 ## i Use `spec()` to retrieve the full column specification for this data.
 ## i Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
 </div>
-<div id="exploring-your-data" class="section level2" number="2.6">
-<h2><span class="header-section-number">2.6</span> (6) Exploring your data</h2>
+<div id="exploring-your-data" class="section level2" number="2.5">
+<h2><span class="header-section-number">2.5</span> Exploring your data</h2>
 <p>Now you have a data file read in, but how do you see what’s in it?</p>
 <p><code>head()</code>: shows first six rows</p>
 <div class="sourceCode" id="cb82"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb82-1"><a href="data-cleaning-wrangling.html#cb82-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(jump_data)</span></code></pre></div>
@@ -550,8 +503,8 @@ or try greater than or equals to &gt;= or less than or equal to with &lt;=</p>
 ##                     Mean   :168.0   Mean   :45.38  
 ##                     3rd Qu.:171.0   3rd Qu.:50.25  
 ##                     Max.   :182.0   Max.   :62.00</code></pre>
-<div id="try-it-out-4" class="section level4" number="2.6.0.1">
-<h4><span class="header-section-number">2.6.0.1</span> Try it out</h4>
+<div id="try-it-out-4" class="section level4" number="2.5.0.1">
+<h4><span class="header-section-number">2.5.0.1</span> Try it out</h4>
 <ol style="list-style-type: decimal">
 <li>Download the three “penguin_data” files and save them in the same location as this Markdown. They all contain the same data, but it’s saved in slightly different formats, so you need to read them each in with a different command. Make sure to save them to variables.</li>
 <li>Take a look at your dataframe in the Environment tab.</li>
@@ -560,8 +513,8 @@ or try greater than or equals to &gt;= or less than or equal to with &lt;=</p>
 </ol>
 </div>
 </div>
-<div id="columns" class="section level2" number="2.7">
-<h2><span class="header-section-number">2.7</span> (7) Columns</h2>
+<div id="columns" class="section level2" number="2.6">
+<h2><span class="header-section-number">2.6</span> Columns</h2>
 <ul>
 <li>specific column call with dataframe_name$column_name</li>
 </ul>
@@ -570,8 +523,8 @@ or try greater than or equals to &gt;= or less than or equal to with &lt;=</p>
 <pre><code>## [1] &quot;A&quot; &quot;B&quot; &quot;C&quot; &quot;D&quot; &quot;E&quot; &quot;F&quot; &quot;G&quot; &quot;H&quot;</code></pre>
 <div class="sourceCode" id="cb90"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb90-1"><a href="data-cleaning-wrangling.html#cb90-1" aria-hidden="true" tabindex="-1"></a>jump_data<span class="sc">$</span>height_cm</span></code></pre></div>
 <pre><code>## [1] 170 165 167 159 182 174 162 165</code></pre>
-<div id="descriptive-stats" class="section level3" number="2.7.1">
-<h3><span class="header-section-number">2.7.1</span> Descriptive stats</h3>
+<div id="descriptive-stats" class="section level3" number="2.6.1">
+<h3><span class="header-section-number">2.6.1</span> Descriptive stats</h3>
 <p>Basic descriptive statistics for numeric columns – mean, median and range</p>
 <div class="sourceCode" id="cb92"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb92-1"><a href="data-cleaning-wrangling.html#cb92-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(jump_data<span class="sc">$</span>height_cm)</span></code></pre></div>
 <pre><code>## [1] 168</code></pre>
@@ -582,16 +535,16 @@ or try greater than or equals to &gt;= or less than or equal to with &lt;=</p>
 <div class="sourceCode" id="cb98"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb98-1"><a href="data-cleaning-wrangling.html#cb98-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(jump_data<span class="sc">$</span>height_cm)</span></code></pre></div>
 <pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 ##   159.0   164.2   166.0   168.0   171.0   182.0</code></pre>
-<div id="try-it-out-5" class="section level4" number="2.7.1.1">
-<h4><span class="header-section-number">2.7.1.1</span> Try it out</h4>
+<div id="try-it-out-5" class="section level4" number="2.6.1.1">
+<h4><span class="header-section-number">2.6.1.1</span> Try it out</h4>
 <ol style="list-style-type: decimal">
 <li>Use the penguin dataset. What is the range of flipper lengths?</li>
 <li>Save the mean body mass to a variable called “average_bodymass”. This number is in grams. What would the equivalent be in kilograms? Hint: Divide by 1000.</li>
 </ol>
 </div>
 </div>
-<div id="categorical-columns" class="section level3" number="2.7.2">
-<h3><span class="header-section-number">2.7.2</span> Categorical columns</h3>
+<div id="categorical-columns" class="section level3" number="2.6.2">
+<h3><span class="header-section-number">2.6.2</span> Categorical columns</h3>
 <p>The penguins data contains information on several different penguin species. But how many, exactly? Let’s try to use ‘summary’ to extract that information:</p>
 <div class="sourceCode" id="cb100"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb100-1"><a href="data-cleaning-wrangling.html#cb100-1" aria-hidden="true" tabindex="-1"></a>penguins <span class="ot">&lt;-</span> <span class="fu">read_tsv</span>(<span class="st">&quot;penguin_data_3.txt&quot;</span>)</span></code></pre></div>
 <pre><code>## Rows: 344 Columns: 8</code></pre>
@@ -632,8 +585,8 @@ or try greater than or equals to &gt;= or less than or equal to with &lt;=</p>
 <ul>
 <li>Quick reference: check the environment tab upper-right</li>
 </ul>
-<div id="try-it-out-6" class="section level4" number="2.7.2.1">
-<h4><span class="header-section-number">2.7.2.1</span> Try it out</h4>
+<div id="try-it-out-6" class="section level4" number="2.6.2.1">
+<h4><span class="header-section-number">2.6.2.1</span> Try it out</h4>
 <ol style="list-style-type: decimal">
 <li>Which other variables in the penguins data should be factors? Change them using the same code we used above.</li>
 <li>How many entries from penguins who live on the “Dream” island are there?</li>
@@ -641,8 +594,8 @@ or try greater than or equals to &gt;= or less than or equal to with &lt;=</p>
 </div>
 </div>
 </div>
-<div id="the-pipe-operator" class="section level2" number="2.8">
-<h2><span class="header-section-number">2.8</span> (8) The pipe operator</h2>
+<div id="the-pipe-operator" class="section level2" number="2.7">
+<h2><span class="header-section-number">2.7</span> The pipe operator</h2>
 <p>The pipe %&gt;% is a command from the magrittr package (which is included in tidyverse, so no need to load it explicitly).
 When the pipe is used, the output from the first line is automatically passed to the second line. Specifically, the output is used as the first argument of the next command.
 Use Control + Shift + M to automatically insert %&gt;%</p>
@@ -702,13 +655,13 @@ Use Control + Shift + M to automatically insert %&gt;%</p>
 ## 3 Adelie  Torge~           40.3          18                195        3250 fema~
 ## 4 Adelie  Torge~           NA            NA                 NA          NA &lt;NA&gt; 
 ## # ... with 1 more variable: year &lt;dbl&gt;</code></pre>
-<div id="try-it-out-7" class="section level4" number="2.8.0.1">
-<h4><span class="header-section-number">2.8.0.1</span> Try it out</h4>
+<div id="try-it-out-7" class="section level4" number="2.7.0.1">
+<h4><span class="header-section-number">2.7.0.1</span> Try it out</h4>
 <p>Look at the last three lines of the penguins data (hint: <code>tail</code>). Use the base R command, then try to rewrite it with the pipe %&gt;%</p>
 </div>
 </div>
-<div id="conclusion" class="section level2" number="2.9">
-<h2><span class="header-section-number">2.9</span> (9) Conclusion</h2>
+<div id="conclusion" class="section level2" number="2.8">
+<h2><span class="header-section-number">2.8</span> Conclusion</h2>
 <ul>
 <li>Installed R, R-Studio</li>
 <li>R-Markdown</li>
@@ -725,13 +678,13 @@ Use Control + Shift + M to automatically insert %&gt;%</p>
 - reorder<br />
 - filter based on condition<br />
 - etc.</p>
-<div id="reading" class="section level3" number="2.9.1">
-<h3><span class="header-section-number">2.9.1</span> Reading</h3>
+<div id="reading" class="section level3" number="2.8.1">
+<h3><span class="header-section-number">2.8.1</span> Reading</h3>
 <p>As a follow-up to this tutorial, you might want to read chapters 3.3 - 3.9 in Navarro, Learning Statistics with R (p. 46 - 66).</p>
 </div>
 </div>
-<div id="deplyr" class="section level2" number="2.10">
-<h2><span class="header-section-number">2.10</span> Deplyr</h2>
+<div id="deplyr" class="section level2" number="2.9">
+<h2><span class="header-section-number">2.9</span> Deplyr</h2>
 <div class="sourceCode" id="cb122"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb122-1"><a href="data-cleaning-wrangling.html#cb122-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
 <span id="cb122-2"><a href="data-cleaning-wrangling.html#cb122-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
 <span id="cb122-3"><a href="data-cleaning-wrangling.html#cb122-3" aria-hidden="true" tabindex="-1"></a>billboard100 <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;charts.csv&quot;</span>)</span></code></pre></div>

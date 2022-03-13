@@ -76,10 +76,7 @@ File -> New File -> R Markdown
 - YAML information at top:
 
   ---
-  title: "Intro to R"
-  author: "Kyla McConnell"
-  date: "12/21/2020"
-  output: html_document
+
   ---
 
 - text in whitespace = text (unlike in an R script)
@@ -100,5 +97,50 @@ Output:
 - directly below code block in preview window
 
 - Can also use (#) to denote lines that are comments and shouldn't be read as R code
+
+## Packages
+
+### Installing packages
+
+*Packages* - extend basic R functions to add more complicated/specialized functionality
+
+- CRAN: R Consortium's host for packages -- any advanced R-programmer can make and submit their packages, any R-user can download and use them
+
+- Install packages once when you first use them
+  - command in console (or Markdown): `install.packages("packagename")`
+  - or use the panel at the lower right, under the Packages tab
+
+Try it now with one of the most used packages by copying the following code into your console `install.packages("tidyverse")`
+
+
+### Using packages
+
+- `library()` command at beginning of script to use calls from that package -- will only work if you've already installed the package
+
+- Good style: load all packages in first code block
+
+- Error about not finding a package? You probably don't have it installed. 
+
+```{r}
+library(tidyverse)
+```
+
+
+In summary: You need to install a package once, but need to load it (using the library command) every time you start a new R session.  
+
+#### Try it out
+
+1. Try the following command:
+```{r}
+#beep(2)
+```
+What error message do you get?
+
+Now install the package "beepr" and call the package to this session with a library call somewhere above the beep command (line above is enough.) Try running the command again (make sure your speakers are on -- but not too loud :D) 
+
+2. Install and -load- the "cowsay" package and try the following command:
+```{r}
+#say(what = "Good luck learning R!", by = "chicken")
+```
 
 

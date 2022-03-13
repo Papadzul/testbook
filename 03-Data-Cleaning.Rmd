@@ -2,7 +2,7 @@
 
 ## Tidyverse
 
-## (2) Variables
+## Variables
 
 ### Simple variables
 
@@ -95,7 +95,7 @@ my_numbers[1]
 4. Subtract long_array from short_array
 5. Look at the output. What does this tell you about how R deals with vectors of different lengths?
 
-## (3) Data types
+## Data types
 
 - Data types -- how R interprets the input you give it
 - Figure out what type something is with `class()` 
@@ -204,53 +204,7 @@ levels(fav_flavors)
 
 Bonus: What does TRUE == 1 return? What about FALSE == 1? Try them both with 0 too. What does this tell you about how R deals with logical variables?
 
-## (4) Packages
-
-### Installing packages
-
-*Packages* - extend basic R functions to add more complicated/specialized functionality
-
-- CRAN: R Consortium's host for packages -- any advanced R-programmer can make and submit their packages, any R-user can download and use them
-
-- Install packages once when you first use them
-  - command in console (or Markdown): `install.packages("packagename")`
-  - or use the panel at the lower right, under the Packages tab
-
-Try it now with one of the most used packages by copying the following code into your console `install.packages("tidyverse")`
-
-
-### Using packages
-
-- `library()` command at beginning of script to use calls from that package -- will only work if you've already installed the package
-
-- Good style: load all packages in first code block
-
-- Error about not finding a package? You probably don't have it installed. 
-
-```{r}
-library(tidyverse)
-```
-
-
-In summary: You need to install a package once, but need to load it (using the library command) every time you start a new R session.  
-
-#### Try it out
-
-1. Try the following command:
-```{r}
-#beep(2)
-```
-What error message do you get?
-
-Now install the package "beepr" and call the package to this session with a library call somewhere above the beep command (line above is enough.) Try running the command again (make sure your speakers are on -- but not too loud :D) 
-
-2. Install and -load- the "cowsay" package and try the following command:
-```{r}
-#say(what = "Good luck learning R!", by = "chicken")
-```
-
-
-## (5) Reading in data
+## Reading in data
 
 - What type of file are you working with?
   - Excel: go to File -> Save As and select either comma-separated values (csv) or tab-separated values (tsv)
@@ -285,7 +239,7 @@ jump_data <- read_delim("jump.csv", delim = ",")
 ```
 
 
-## (6) Exploring your data
+## Exploring your data
 
 Now you have a data file read in, but how do you see what's in it?
 
@@ -316,7 +270,7 @@ summary(jump_data)
 4. We already tried the `head()` command, now try the `tail()` command. What does it do?
 
 
-## (7) Columns
+## Columns
 
 - specific column call with dataframe_name$column_name
 
@@ -394,7 +348,7 @@ summary(penguins$species)
 2. How many entries from penguins who live on the "Dream" island are there?
 
 
-## (8) The pipe operator
+## The pipe operator
 
 The pipe %>% is a command from the magrittr package (which is included in tidyverse, so no need to load it explicitly). 
 When the pipe is used, the output from the first line is automatically passed to the second line. Specifically, the output is used as the first argument of the next command.
@@ -415,7 +369,7 @@ penguins %>%
 #### Try it out
 Look at the last three lines of the penguins data (hint: `tail`). Use the base R command, then try to rewrite it with the pipe %>% 
 
-## (9) Conclusion
+## Conclusion
 
 - Installed R, R-Studio
 - R-Markdown 
