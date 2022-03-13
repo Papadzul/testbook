@@ -1,5 +1,3 @@
-# Week 4
-
 # Exploring hierarchy in the data
 
 # visualization of order of data
@@ -19,13 +17,9 @@
 
 # actual path D:\RGC work\work in may\RGC\Rworks
 
-
-```{r}
-setwd("C:/Users/Hello People/Desktop/AMA SY 21-22 2ND SEM/datanal") # to set working directory
+setwd("D:/RGC work/work in may/RGC/Rworks") # to set working directory
 getwd()  # to see which is our working directory
-```
 
-```{r}
 # reading data from CSV or excel file
 
 #read.csv() function
@@ -33,34 +27,27 @@ df= read.csv("iris.csv")
 head(df)
 summary(df)
 str(df)
-```
 
-```{r}
+
 #read.xlsx() function
 df1= readxl::read_xlsx("iris.xlsx")
 head(df1)
 summary(df1)
 str(df1)
-```
 
-```{r}
 # if your data is in specific sheet of excel workbook
 df2= readxl::read_xlsx("iris.xlsx",sheet="iris")
 head(df2)
 summary(df2)
 str(df2)
-```
 
-```{r}
 # for the function below we need tidyverse package
 library(tidyverse)
 # Selecting column
 
 df_f4= select(df,-5)
 head(df_f4)
-```
 
-```{r}
 # filtering rows
 df_setosa= filter(df,Species=="setosa")
 head(df_setosa)
@@ -69,116 +56,98 @@ dim(df_setosa)
 df_virginica= filter(df,Species=="virginica")
 head(df_virginica)
 dim(df_virginica)
-```
 
-```{r}
 # gathering columns to make long table
 df_long= gather(df,Mes_type,length,1:4)
 head(df_long)
-```
 
-```{r}
 #grouping and summarizing data
 # group by
 df_sumzd=group_by(df_long,Species)
 head(df_sumzd)
-```
 
-```{r}
 #Summarize
 df_sumzd=group_by(df_long,Species,Mes_type) %>% summarise(mean=mean(length),sd=sd(length))
 head(df_sumzd)
-```
 
 
-```{r}
 # Plot basic barplot
-#p=ggplot(df_sumzd,aes(x=Species,y=mean))+geom_bar()
+p=ggplot(df_sumzd,aes(x=Species,y=mean))+
+   geom_bar()
+p
 
-#p
-```
 
-```{r}
+
 # Plot basic barplot- effect of stat= "identity"
 p=ggplot(df_sumzd,aes(x=Species,y=mean))+
    geom_bar(stat="identity")
 p
-```
 
-```{r}
 # fill color
+
 p=ggplot(df_sumzd,aes(x=Species,y=mean))+
    geom_bar(stat="identity",fill="red")
 p
-```
 
-```{r}
+# fill color - mapping to a variable
+
 p=ggplot(df_sumzd,aes(x=Species,y=mean, fill=Species))+
    geom_bar(stat="identity")
 p
-```
 
-```{r}
-# fill color - mapping to a variable
 # fill colors- stacked bar plot
 p=ggplot(df_sumzd,aes(x=Species,y=mean,fill=Mes_type))+
    geom_bar(stat="identity")
 p
-```
 
-```{r}
 # fill colors- grouped bar plot 
 p=ggplot(df_sumzd,aes(x=Species,y=mean,fill=Mes_type))+
    geom_bar(stat="identity",position="dodge")
 p
-```
 
-```{r}
 #Error bars
 p=ggplot(df_sumzd,aes(x=Species,y=mean,fill=Mes_type))+
    geom_bar(stat="identity",position="dodge") +
    geom_errorbar(aes(ymin=mean-sd,ymax=mean+sd))
 
-p
-```
 
-```{r}
+p
+
 #Error bars width
 p=ggplot(df_sumzd,aes(x=Species,y=mean,fill=Mes_type))+
    geom_bar(stat="identity",position="dodge") +
    geom_errorbar(aes(ymin=mean-sd,ymax=mean+sd),width=0.25)
 
-p
-```
 
-```{r}
+p
+
 #Error bars width, size,position
 p=ggplot(df_sumzd,aes(x=Species,y=mean,fill=Mes_type))+
    geom_bar(stat="identity",position="dodge") +
    geom_errorbar(aes(ymin=mean-sd,ymax=mean+sd),width=0.25,
                  size=1,position= position_dodge(0.9))
-p
-```
 
-```{r}
+
+p
+
 #Error bars width,size, position, alpha
 p=ggplot(df_sumzd,aes(x=Species,y=mean,fill=Mes_type))+
    geom_bar(stat="identity",position="dodge") +
    geom_errorbar(aes(ymin=mean-sd,ymax=mean+sd),width=0.25,
                  size=1,position= position_dodge(0.9),alpha=0.3)
-p
-```
 
-```{r}
+
+p
+
 #Error bars width,size, position, alpha and labels
 p=ggplot(df_sumzd,aes(x=Species,y=mean,fill=Mes_type,label=mean))+
    geom_bar(stat="identity",position="dodge") +
    geom_errorbar(aes(ymin=mean-sd,ymax=mean+sd),width=0.25,
                  size=1,position= position_dodge(0.9), alpha=0.3)
-p
-```
 
-```{r}
+
+p
+
 #Error bars width,size, position, alpha and labels
 p=ggplot(df_sumzd,aes(x=Species,y=mean,fill=Mes_type,label=mean))+
    geom_bar(stat="identity",position="dodge") +
@@ -186,10 +155,9 @@ p=ggplot(df_sumzd,aes(x=Species,y=mean,fill=Mes_type,label=mean))+
                  size=1,position= position_dodge(0.9), alpha=0.3)+
    geom_text(position=position_dodge(0.9))
 
-p
-```
 
-```{r}
+p
+
 #Error bars width,size, position, alpha and labels, label position corrected
 p=ggplot(df_sumzd,aes(x=Species,y=mean,fill=Mes_type,label=mean))+
    geom_bar(stat="identity",position="dodge") +
@@ -197,20 +165,20 @@ p=ggplot(df_sumzd,aes(x=Species,y=mean,fill=Mes_type,label=mean))+
                  size=1,position= position_dodge(0.9), alpha=0.3)+
    geom_text(position=position_dodge(0.9),vjust=-1)
 
-p
-```
 
-```{r}
+p
+
+
 #Error bars width,size, position, alpha and labels, label position more corrected
 p=ggplot(df_sumzd,aes(x=Species,y=mean,fill=Mes_type,label=mean))+
    geom_bar(stat="identity",position="dodge") +
    geom_errorbar(aes(ymin=mean-sd,ymax=mean+sd),width=0.25,
                  size=1,position= position_dodge(0.9), alpha=0.3)+
    geom_text(position=position_dodge(0.9),vjust=-0.5, hjust=1.2)
-p
-```
 
-```{r}
+
+p
+
 #theme classic
 p=ggplot(df_sumzd,aes(x=Species,y=mean,fill=Mes_type,label=mean))+
    geom_bar(stat="identity",position="dodge") +
@@ -218,11 +186,11 @@ p=ggplot(df_sumzd,aes(x=Species,y=mean,fill=Mes_type,label=mean))+
                  size=1,position= position_dodge(0.9), alpha=0.3)+
    geom_text(position=position_dodge(0.9),vjust=-0.5, hjust=1)+
    theme_classic()
+
+
 p
-```
 
 
-```{r}
 #theme bw
 p=ggplot(df_sumzd,aes(x=Species,y=mean,fill=Mes_type,label=mean))+
    geom_bar(stat="identity",position="dodge") +
@@ -231,20 +199,20 @@ p=ggplot(df_sumzd,aes(x=Species,y=mean,fill=Mes_type,label=mean))+
    geom_text(position=position_dodge(0.9),vjust=-0.5, hjust=1.1)+
    theme_bw()
 
-p
-```
 
-```{r}
+p
+
 # I don't like this plot.
+
 p=ggplot(df_sumzd,aes(x=Species,y=mean,fill=Mes_type))+
    geom_bar(stat="identity",position="dodge") +
    geom_errorbar(aes(ymin=mean-sd,ymax=mean+sd),width=0.25,
                  size=1,position= position_dodge(0.9), alpha=0.3)+
       theme_bw()
-p
-```
 
-```{r}
+
+p
+
 # coord flip, this to when x axis labels are very long and overlap each other
 p=ggplot(df_sumzd,aes(x=Species,y=mean,fill=Mes_type))+
    geom_bar(stat="identity",position="dodge") +
@@ -252,8 +220,10 @@ p=ggplot(df_sumzd,aes(x=Species,y=mean,fill=Mes_type))+
                  size=1,position= position_dodge(0.9), alpha=0.3)+
    theme_bw()+
    coord_flip()
+
+
 p
-```
+
 
 
 #That's it for bar plot.
