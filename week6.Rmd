@@ -1,1 +1,6 @@
-# Week 6
+# Testing Hypothesis
+
+## Test 1. Pearson Correlation Test
+## T-Test
+## Chi-Square Test
+## ANOVA
