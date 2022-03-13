@@ -1,0 +1,29 @@
+# Data in R
+
+## Creating Data in R
+
+```{r}
+# Data creation
+sex <-c("M","F","M","F","M","F","M","F","M","F")
+math <-c(85,90, 88,90,99,87,88,79,80,10)
+english <-c(80, 90,87,78,79,90,99,90,80,88)
+# data frame
+data1.data <- data.frame(sex,math,english)
+#vaccine <- read.csv("paste")
+```
+```{r}
+head(data1.data,10)
+tail(data1.data)
+min(data1.data$math)
+max(data1.data$english)
+```
+
+
+## Importing Data to R
+
+### Importing from excel file
+### Importing from webpage
+### Importing from csv file
+
+
+
