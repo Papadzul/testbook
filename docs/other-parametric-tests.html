@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Week 6 Other Parametric Tests | MATH6200</title>
-  <meta name="description" content="Week 6 Other Parametric Tests | MATH6200" />
+  <title>Week 6 Other Parametric Tests | Intro to R</title>
+  <meta name="description" content="Week 6 Other Parametric Tests | Intro to R" />
   <meta name="generator" content="bookdown 0.24.4 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Week 6 Other Parametric Tests | MATH6200" />
+  <meta property="og:title" content="Week 6 Other Parametric Tests | Intro to R" />
   <meta property="og:type" content="book" />
   
   <meta property="og:image" content="/cover.png" />
@@ -16,15 +16,15 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Week 6 Other Parametric Tests | MATH6200" />
+  <meta name="twitter:title" content="Week 6 Other Parametric Tests | Intro to R" />
   
   
   <meta name="twitter:image" content="/cover.png" />
 
-<meta name="author" content="Dennis E. Cabais" />
+<meta name="author" content="Kyla McConnell" />
 
 
-<meta name="date" content="2022-03-12" />
+<meta name="date" content="2020-12-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -137,7 +137,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">MATH6200</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#first-steps"><i class="fa fa-check"></i>First steps</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#r-studio"><i class="fa fa-check"></i>R-Studio</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#r-script-.r"><i class="fa fa-check"></i>R script (.R)</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#r-markdown-file-.rmd"><i class="fa fa-check"></i>R-Markdown file (.Rmd)</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="1" data-path="data-in-r.html"><a href="data-in-r.html"><i class="fa fa-check"></i><b>1</b> Data in R</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="data-in-r.html"><a href="data-in-r.html#creating-data-in-r"><i class="fa fa-check"></i><b>1.1</b> Creating Data in R</a></li>
@@ -148,7 +156,41 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.2.3" data-path="data-in-r.html"><a href="data-in-r.html#importing-from-csv-file"><i class="fa fa-check"></i><b>1.2.3</b> Importing from csv file</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html"><i class="fa fa-check"></i><b>2</b> Data Cleaning / Wrangling</a></li>
+<li class="chapter" data-level="2" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html"><i class="fa fa-check"></i><b>2</b> Data Cleaning / Wrangling</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#tidyverse"><i class="fa fa-check"></i><b>2.1</b> Tidyverse</a></li>
+<li class="chapter" data-level="2.2" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#variables"><i class="fa fa-check"></i><b>2.2</b> (2) Variables</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#simple-variables"><i class="fa fa-check"></i><b>2.2.1</b> Simple variables</a></li>
+<li class="chapter" data-level="2.2.2" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#vectors"><i class="fa fa-check"></i><b>2.2.2</b> Vectors</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#data-types"><i class="fa fa-check"></i><b>2.3</b> (3) Data types</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#numeric"><i class="fa fa-check"></i><b>2.3.1</b> Numeric</a></li>
+<li class="chapter" data-level="2.3.2" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#integer"><i class="fa fa-check"></i><b>2.3.2</b> Integer</a></li>
+<li class="chapter" data-level="2.3.3" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#character"><i class="fa fa-check"></i><b>2.3.3</b> Character</a></li>
+<li class="chapter" data-level="2.3.4" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#logical"><i class="fa fa-check"></i><b>2.3.4</b> Logical</a></li>
+<li class="chapter" data-level="2.3.5" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#factor"><i class="fa fa-check"></i><b>2.3.5</b> Factor</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#packages"><i class="fa fa-check"></i><b>2.4</b> (4) Packages</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#installing-packages"><i class="fa fa-check"></i><b>2.4.1</b> Installing packages</a></li>
+<li class="chapter" data-level="2.4.2" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#using-packages"><i class="fa fa-check"></i><b>2.4.2</b> Using packages</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#reading-in-data"><i class="fa fa-check"></i><b>2.5</b> (5) Reading in data</a></li>
+<li class="chapter" data-level="2.6" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#exploring-your-data"><i class="fa fa-check"></i><b>2.6</b> (6) Exploring your data</a></li>
+<li class="chapter" data-level="2.7" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#columns"><i class="fa fa-check"></i><b>2.7</b> (7) Columns</a>
+<ul>
+<li class="chapter" data-level="2.7.1" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#descriptive-stats"><i class="fa fa-check"></i><b>2.7.1</b> Descriptive stats</a></li>
+<li class="chapter" data-level="2.7.2" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#categorical-columns"><i class="fa fa-check"></i><b>2.7.2</b> Categorical columns</a></li>
+</ul></li>
+<li class="chapter" data-level="2.8" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#the-pipe-operator"><i class="fa fa-check"></i><b>2.8</b> (8) The pipe operator</a></li>
+<li class="chapter" data-level="2.9" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#conclusion"><i class="fa fa-check"></i><b>2.9</b> (9) Conclusion</a>
+<ul>
+<li class="chapter" data-level="2.9.1" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#reading"><i class="fa fa-check"></i><b>2.9.1</b> Reading</a></li>
+</ul></li>
+<li class="chapter" data-level="2.10" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#deplyr"><i class="fa fa-check"></i><b>2.10</b> Deplyr</a></li>
+</ul></li>
 <li class="chapter" data-level="3" data-path="data-manipulation.html"><a href="data-manipulation.html"><i class="fa fa-check"></i><b>3</b> Data Manipulation</a>
 <ul>
 <li class="chapter" data-level="3.1" data-path="data-manipulation.html"><a href="data-manipulation.html#data-manipulation-skills"><i class="fa fa-check"></i><b>3.1</b> Data Manipulation Skills</a>
@@ -180,7 +222,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">MATH6200</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Intro to R</a>
           </h1>
         </div>
 

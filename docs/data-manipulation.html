@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Week 3 Data Manipulation | MATH6200</title>
-  <meta name="description" content="Week 3 Data Manipulation | MATH6200" />
+  <title>Week 3 Data Manipulation | Intro to R</title>
+  <meta name="description" content="Week 3 Data Manipulation | Intro to R" />
   <meta name="generator" content="bookdown 0.24.4 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Week 3 Data Manipulation | MATH6200" />
+  <meta property="og:title" content="Week 3 Data Manipulation | Intro to R" />
   <meta property="og:type" content="book" />
   
   <meta property="og:image" content="/cover.png" />
@@ -16,15 +16,15 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Week 3 Data Manipulation | MATH6200" />
+  <meta name="twitter:title" content="Week 3 Data Manipulation | Intro to R" />
   
   
   <meta name="twitter:image" content="/cover.png" />
 
-<meta name="author" content="Dennis E. Cabais" />
+<meta name="author" content="Kyla McConnell" />
 
 
-<meta name="date" content="2022-03-12" />
+<meta name="date" content="2020-12-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -137,7 +137,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">MATH6200</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#first-steps"><i class="fa fa-check"></i>First steps</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#r-studio"><i class="fa fa-check"></i>R-Studio</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#r-script-.r"><i class="fa fa-check"></i>R script (.R)</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#r-markdown-file-.rmd"><i class="fa fa-check"></i>R-Markdown file (.Rmd)</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="1" data-path="data-in-r.html"><a href="data-in-r.html"><i class="fa fa-check"></i><b>1</b> Data in R</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="data-in-r.html"><a href="data-in-r.html#creating-data-in-r"><i class="fa fa-check"></i><b>1.1</b> Creating Data in R</a></li>
@@ -148,7 +156,41 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.2.3" data-path="data-in-r.html"><a href="data-in-r.html#importing-from-csv-file"><i class="fa fa-check"></i><b>1.2.3</b> Importing from csv file</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html"><i class="fa fa-check"></i><b>2</b> Data Cleaning / Wrangling</a></li>
+<li class="chapter" data-level="2" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html"><i class="fa fa-check"></i><b>2</b> Data Cleaning / Wrangling</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#tidyverse"><i class="fa fa-check"></i><b>2.1</b> Tidyverse</a></li>
+<li class="chapter" data-level="2.2" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#variables"><i class="fa fa-check"></i><b>2.2</b> (2) Variables</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#simple-variables"><i class="fa fa-check"></i><b>2.2.1</b> Simple variables</a></li>
+<li class="chapter" data-level="2.2.2" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#vectors"><i class="fa fa-check"></i><b>2.2.2</b> Vectors</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#data-types"><i class="fa fa-check"></i><b>2.3</b> (3) Data types</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#numeric"><i class="fa fa-check"></i><b>2.3.1</b> Numeric</a></li>
+<li class="chapter" data-level="2.3.2" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#integer"><i class="fa fa-check"></i><b>2.3.2</b> Integer</a></li>
+<li class="chapter" data-level="2.3.3" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#character"><i class="fa fa-check"></i><b>2.3.3</b> Character</a></li>
+<li class="chapter" data-level="2.3.4" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#logical"><i class="fa fa-check"></i><b>2.3.4</b> Logical</a></li>
+<li class="chapter" data-level="2.3.5" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#factor"><i class="fa fa-check"></i><b>2.3.5</b> Factor</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#packages"><i class="fa fa-check"></i><b>2.4</b> (4) Packages</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#installing-packages"><i class="fa fa-check"></i><b>2.4.1</b> Installing packages</a></li>
+<li class="chapter" data-level="2.4.2" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#using-packages"><i class="fa fa-check"></i><b>2.4.2</b> Using packages</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#reading-in-data"><i class="fa fa-check"></i><b>2.5</b> (5) Reading in data</a></li>
+<li class="chapter" data-level="2.6" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#exploring-your-data"><i class="fa fa-check"></i><b>2.6</b> (6) Exploring your data</a></li>
+<li class="chapter" data-level="2.7" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#columns"><i class="fa fa-check"></i><b>2.7</b> (7) Columns</a>
+<ul>
+<li class="chapter" data-level="2.7.1" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#descriptive-stats"><i class="fa fa-check"></i><b>2.7.1</b> Descriptive stats</a></li>
+<li class="chapter" data-level="2.7.2" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#categorical-columns"><i class="fa fa-check"></i><b>2.7.2</b> Categorical columns</a></li>
+</ul></li>
+<li class="chapter" data-level="2.8" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#the-pipe-operator"><i class="fa fa-check"></i><b>2.8</b> (8) The pipe operator</a></li>
+<li class="chapter" data-level="2.9" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#conclusion"><i class="fa fa-check"></i><b>2.9</b> (9) Conclusion</a>
+<ul>
+<li class="chapter" data-level="2.9.1" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#reading"><i class="fa fa-check"></i><b>2.9.1</b> Reading</a></li>
+</ul></li>
+<li class="chapter" data-level="2.10" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html#deplyr"><i class="fa fa-check"></i><b>2.10</b> Deplyr</a></li>
+</ul></li>
 <li class="chapter" data-level="3" data-path="data-manipulation.html"><a href="data-manipulation.html"><i class="fa fa-check"></i><b>3</b> Data Manipulation</a>
 <ul>
 <li class="chapter" data-level="3.1" data-path="data-manipulation.html"><a href="data-manipulation.html#data-manipulation-skills"><i class="fa fa-check"></i><b>3.1</b> Data Manipulation Skills</a>
@@ -180,7 +222,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">MATH6200</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Intro to R</a>
           </h1>
         </div>
 
@@ -203,14 +245,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 <div id="data-manipulation-skills" class="section level2" number="3.1">
 <h2><span class="header-section-number">3.1</span> Data Manipulation Skills</h2>
-<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="data-manipulation.html#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">&quot;C:/Users/Hello People/Desktop/AMA SY 21-22 2ND SEM/datanal&quot;</span>) <span class="co"># to set working directory</span></span>
-<span id="cb39-2"><a href="data-manipulation.html#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()  <span class="co"># to see which is our working directory</span></span></code></pre></div>
+<div class="sourceCode" id="cb147"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb147-1"><a href="data-manipulation.html#cb147-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">&quot;C:/Users/Hello People/Desktop/AMA SY 21-22 2ND SEM/datanal&quot;</span>) <span class="co"># to set working directory</span></span>
+<span id="cb147-2"><a href="data-manipulation.html#cb147-2" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()  <span class="co"># to see which is our working directory</span></span></code></pre></div>
 <pre><code>## [1] &quot;C:/Users/Hello People/Desktop/AMA SY 21-22 2ND SEM/datanal&quot;</code></pre>
 <div id="reading-data-from-csv-or-excel-file" class="section level3" number="3.1.1">
 <h3><span class="header-section-number">3.1.1</span> reading data from CSV or excel file</h3>
-<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="data-manipulation.html#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co">#read.csv() function</span></span>
-<span id="cb41-2"><a href="data-manipulation.html#cb41-2" aria-hidden="true" tabindex="-1"></a>df<span class="ot">=</span> <span class="fu">read.csv</span>(<span class="st">&quot;iris.csv&quot;</span>)</span>
-<span id="cb41-3"><a href="data-manipulation.html#cb41-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df)</span></code></pre></div>
+<div class="sourceCode" id="cb149"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb149-1"><a href="data-manipulation.html#cb149-1" aria-hidden="true" tabindex="-1"></a><span class="co">#read.csv() function</span></span>
+<span id="cb149-2"><a href="data-manipulation.html#cb149-2" aria-hidden="true" tabindex="-1"></a>df<span class="ot">=</span> <span class="fu">read.csv</span>(<span class="st">&quot;iris.csv&quot;</span>)</span>
+<span id="cb149-3"><a href="data-manipulation.html#cb149-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df)</span></code></pre></div>
 <pre><code>##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
 ## 1          5.1         3.5          1.4         0.2  setosa
 ## 2          4.9         3.0          1.4         0.2  setosa
@@ -218,7 +260,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4          4.6         3.1          1.5         0.2  setosa
 ## 5          5.0         3.6          1.4         0.2  setosa
 ## 6          5.4         3.9          1.7         0.4  setosa</code></pre>
-<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="data-manipulation.html#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(df)</span></code></pre></div>
+<div class="sourceCode" id="cb151"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb151-1"><a href="data-manipulation.html#cb151-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(df)</span></code></pre></div>
 <pre><code>##   Sepal.Length    Sepal.Width     Petal.Length    Petal.Width   
 ##  Min.   :4.300   Min.   :2.000   Min.   :1.000   Min.   :0.100  
 ##  1st Qu.:5.100   1st Qu.:2.800   1st Qu.:1.600   1st Qu.:0.300  
@@ -233,16 +275,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##                    
 ##                    
 ## </code></pre>
-<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="data-manipulation.html#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(df)</span></code></pre></div>
+<div class="sourceCode" id="cb153"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb153-1"><a href="data-manipulation.html#cb153-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(df)</span></code></pre></div>
 <pre><code>## &#39;data.frame&#39;:    150 obs. of  5 variables:
 ##  $ Sepal.Length: num  5.1 4.9 4.7 4.6 5 5.4 4.6 5 4.4 4.9 ...
 ##  $ Sepal.Width : num  3.5 3 3.2 3.1 3.6 3.9 3.4 3.4 2.9 3.1 ...
 ##  $ Petal.Length: num  1.4 1.4 1.3 1.5 1.4 1.7 1.4 1.5 1.4 1.5 ...
 ##  $ Petal.Width : num  0.2 0.2 0.2 0.2 0.2 0.4 0.3 0.2 0.2 0.1 ...
 ##  $ Species     : chr  &quot;setosa&quot; &quot;setosa&quot; &quot;setosa&quot; &quot;setosa&quot; ...</code></pre>
-<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="data-manipulation.html#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="co">#read.xlsx() function</span></span>
-<span id="cb47-2"><a href="data-manipulation.html#cb47-2" aria-hidden="true" tabindex="-1"></a>df1<span class="ot">=</span> readxl<span class="sc">::</span><span class="fu">read_xlsx</span>(<span class="st">&quot;iris.xlsx&quot;</span>)</span>
-<span id="cb47-3"><a href="data-manipulation.html#cb47-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df1)</span></code></pre></div>
+<div class="sourceCode" id="cb155"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb155-1"><a href="data-manipulation.html#cb155-1" aria-hidden="true" tabindex="-1"></a><span class="co">#read.xlsx() function</span></span>
+<span id="cb155-2"><a href="data-manipulation.html#cb155-2" aria-hidden="true" tabindex="-1"></a>df1<span class="ot">=</span> readxl<span class="sc">::</span><span class="fu">read_xlsx</span>(<span class="st">&quot;iris.xlsx&quot;</span>)</span>
+<span id="cb155-3"><a href="data-manipulation.html#cb155-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df1)</span></code></pre></div>
 <pre><code>## # A tibble: 6 x 5
 ##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
 ##          &lt;dbl&gt;       &lt;dbl&gt;        &lt;dbl&gt;       &lt;dbl&gt; &lt;chr&gt;  
@@ -252,7 +294,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4          4.6         3.1          1.5         0.2 setosa 
 ## 5          5           3.6          1.4         0.2 setosa 
 ## 6          5.4         3.9          1.7         0.4 setosa</code></pre>
-<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="data-manipulation.html#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(df1)</span></code></pre></div>
+<div class="sourceCode" id="cb157"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb157-1"><a href="data-manipulation.html#cb157-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(df1)</span></code></pre></div>
 <pre><code>##   Sepal.Length    Sepal.Width     Petal.Length    Petal.Width   
 ##  Min.   :4.300   Min.   :2.000   Min.   :1.000   Min.   :0.100  
 ##  1st Qu.:5.100   1st Qu.:2.800   1st Qu.:1.600   1st Qu.:0.300  
@@ -267,16 +309,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##                    
 ##                    
 ## </code></pre>
-<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="data-manipulation.html#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(df1)</span></code></pre></div>
+<div class="sourceCode" id="cb159"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb159-1"><a href="data-manipulation.html#cb159-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(df1)</span></code></pre></div>
 <pre><code>## tibble [150 x 5] (S3: tbl_df/tbl/data.frame)
 ##  $ Sepal.Length: num [1:150] 5.1 4.9 4.7 4.6 5 5.4 4.6 5 4.4 4.9 ...
 ##  $ Sepal.Width : num [1:150] 3.5 3 3.2 3.1 3.6 3.9 3.4 3.4 2.9 3.1 ...
 ##  $ Petal.Length: num [1:150] 1.4 1.4 1.3 1.5 1.4 1.7 1.4 1.5 1.4 1.5 ...
 ##  $ Petal.Width : num [1:150] 0.2 0.2 0.2 0.2 0.2 0.4 0.3 0.2 0.2 0.1 ...
 ##  $ Species     : chr [1:150] &quot;setosa&quot; &quot;setosa&quot; &quot;setosa&quot; &quot;setosa&quot; ...</code></pre>
-<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="data-manipulation.html#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="co"># if your data is in specific sheet of excel workbook</span></span>
-<span id="cb53-2"><a href="data-manipulation.html#cb53-2" aria-hidden="true" tabindex="-1"></a>df2<span class="ot">=</span> readxl<span class="sc">::</span><span class="fu">read_xlsx</span>(<span class="st">&quot;iris.xlsx&quot;</span>,<span class="at">sheet=</span><span class="st">&quot;iris&quot;</span>)</span>
-<span id="cb53-3"><a href="data-manipulation.html#cb53-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df2)</span></code></pre></div>
+<div class="sourceCode" id="cb161"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb161-1"><a href="data-manipulation.html#cb161-1" aria-hidden="true" tabindex="-1"></a><span class="co"># if your data is in specific sheet of excel workbook</span></span>
+<span id="cb161-2"><a href="data-manipulation.html#cb161-2" aria-hidden="true" tabindex="-1"></a>df2<span class="ot">=</span> readxl<span class="sc">::</span><span class="fu">read_xlsx</span>(<span class="st">&quot;iris.xlsx&quot;</span>,<span class="at">sheet=</span><span class="st">&quot;iris&quot;</span>)</span>
+<span id="cb161-3"><a href="data-manipulation.html#cb161-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df2)</span></code></pre></div>
 <pre><code>## # A tibble: 6 x 5
 ##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
 ##          &lt;dbl&gt;       &lt;dbl&gt;        &lt;dbl&gt;       &lt;dbl&gt; &lt;chr&gt;  
@@ -286,7 +328,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4          4.6         3.1          1.5         0.2 setosa 
 ## 5          5           3.6          1.4         0.2 setosa 
 ## 6          5.4         3.9          1.7         0.4 setosa</code></pre>
-<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="data-manipulation.html#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(df2)</span></code></pre></div>
+<div class="sourceCode" id="cb163"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb163-1"><a href="data-manipulation.html#cb163-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(df2)</span></code></pre></div>
 <pre><code>##   Sepal.Length    Sepal.Width     Petal.Length    Petal.Width   
 ##  Min.   :4.300   Min.   :2.000   Min.   :1.000   Min.   :0.100  
 ##  1st Qu.:5.100   1st Qu.:2.800   1st Qu.:1.600   1st Qu.:0.300  
@@ -301,7 +343,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##                    
 ##                    
 ## </code></pre>
-<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="data-manipulation.html#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(df2)</span></code></pre></div>
+<div class="sourceCode" id="cb165"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb165-1"><a href="data-manipulation.html#cb165-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(df2)</span></code></pre></div>
 <pre><code>## tibble [150 x 5] (S3: tbl_df/tbl/data.frame)
 ##  $ Sepal.Length: num [1:150] 5.1 4.9 4.7 4.6 5 5.4 4.6 5 4.4 4.9 ...
 ##  $ Sepal.Width : num [1:150] 3.5 3 3.2 3.1 3.6 3.9 3.4 3.4 2.9 3.1 ...
@@ -312,23 +354,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="selecting-columns-and-rows" class="section level2" number="3.2">
 <h2><span class="header-section-number">3.2</span> Selecting Columns and Rows</h2>
-<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="data-manipulation.html#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="co"># for the function below we need tidyverse package</span></span>
-<span id="cb59-2"><a href="data-manipulation.html#cb59-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div>
-<pre><code>## -- Attaching packages --------------------------------------- tidyverse 1.3.1 --</code></pre>
-<pre><code>## v tibble  3.1.6     v forcats 0.5.1
-## v purrr   0.3.4</code></pre>
-<pre><code>## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
-## x lubridate::as.difftime() masks base::as.difftime()
-## x lubridate::date()        masks base::date()
-## x dplyr::filter()          masks stats::filter()
-## x lubridate::intersect()   masks base::intersect()
-## x dplyr::lag()             masks stats::lag()
-## x lubridate::setdiff()     masks base::setdiff()
-## x lubridate::union()       masks base::union()</code></pre>
-<div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="data-manipulation.html#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Selecting column</span></span>
-<span id="cb63-2"><a href="data-manipulation.html#cb63-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb63-3"><a href="data-manipulation.html#cb63-3" aria-hidden="true" tabindex="-1"></a>df_f4<span class="ot">=</span> <span class="fu">select</span>(df,<span class="sc">-</span><span class="dv">5</span>)</span>
-<span id="cb63-4"><a href="data-manipulation.html#cb63-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_f4)</span></code></pre></div>
+<div class="sourceCode" id="cb167"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb167-1"><a href="data-manipulation.html#cb167-1" aria-hidden="true" tabindex="-1"></a><span class="co"># for the function below we need tidyverse package</span></span>
+<span id="cb167-2"><a href="data-manipulation.html#cb167-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb167-3"><a href="data-manipulation.html#cb167-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Selecting column</span></span>
+<span id="cb167-4"><a href="data-manipulation.html#cb167-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb167-5"><a href="data-manipulation.html#cb167-5" aria-hidden="true" tabindex="-1"></a>df_f4<span class="ot">=</span> <span class="fu">select</span>(df,<span class="sc">-</span><span class="dv">5</span>)</span>
+<span id="cb167-6"><a href="data-manipulation.html#cb167-6" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_f4)</span></code></pre></div>
 <pre><code>##   Sepal.Length Sepal.Width Petal.Length Petal.Width
 ## 1          5.1         3.5          1.4         0.2
 ## 2          4.9         3.0          1.4         0.2
@@ -336,9 +367,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4          4.6         3.1          1.5         0.2
 ## 5          5.0         3.6          1.4         0.2
 ## 6          5.4         3.9          1.7         0.4</code></pre>
-<div class="sourceCode" id="cb65"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb65-1"><a href="data-manipulation.html#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="co"># filtering rows</span></span>
-<span id="cb65-2"><a href="data-manipulation.html#cb65-2" aria-hidden="true" tabindex="-1"></a>df_setosa<span class="ot">=</span> <span class="fu">filter</span>(df,Species<span class="sc">==</span><span class="st">&quot;setosa&quot;</span>)</span>
-<span id="cb65-3"><a href="data-manipulation.html#cb65-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_setosa)</span></code></pre></div>
+<div class="sourceCode" id="cb169"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb169-1"><a href="data-manipulation.html#cb169-1" aria-hidden="true" tabindex="-1"></a><span class="co"># filtering rows</span></span>
+<span id="cb169-2"><a href="data-manipulation.html#cb169-2" aria-hidden="true" tabindex="-1"></a>df_setosa<span class="ot">=</span> <span class="fu">filter</span>(df,Species<span class="sc">==</span><span class="st">&quot;setosa&quot;</span>)</span>
+<span id="cb169-3"><a href="data-manipulation.html#cb169-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_setosa)</span></code></pre></div>
 <pre><code>##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
 ## 1          5.1         3.5          1.4         0.2  setosa
 ## 2          4.9         3.0          1.4         0.2  setosa
@@ -346,10 +377,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4          4.6         3.1          1.5         0.2  setosa
 ## 5          5.0         3.6          1.4         0.2  setosa
 ## 6          5.4         3.9          1.7         0.4  setosa</code></pre>
-<div class="sourceCode" id="cb67"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb67-1"><a href="data-manipulation.html#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(df_setosa)</span></code></pre></div>
+<div class="sourceCode" id="cb171"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb171-1"><a href="data-manipulation.html#cb171-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(df_setosa)</span></code></pre></div>
 <pre><code>## [1] 50  5</code></pre>
-<div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb69-1"><a href="data-manipulation.html#cb69-1" aria-hidden="true" tabindex="-1"></a>df_virginica<span class="ot">=</span> <span class="fu">filter</span>(df,Species<span class="sc">==</span><span class="st">&quot;virginica&quot;</span>)</span>
-<span id="cb69-2"><a href="data-manipulation.html#cb69-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_virginica)</span></code></pre></div>
+<div class="sourceCode" id="cb173"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb173-1"><a href="data-manipulation.html#cb173-1" aria-hidden="true" tabindex="-1"></a>df_virginica<span class="ot">=</span> <span class="fu">filter</span>(df,Species<span class="sc">==</span><span class="st">&quot;virginica&quot;</span>)</span>
+<span id="cb173-2"><a href="data-manipulation.html#cb173-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_virginica)</span></code></pre></div>
 <pre><code>##   Sepal.Length Sepal.Width Petal.Length Petal.Width   Species
 ## 1          6.3         3.3          6.0         2.5 virginica
 ## 2          5.8         2.7          5.1         1.9 virginica
@@ -357,14 +388,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4          6.3         2.9          5.6         1.8 virginica
 ## 5          6.5         3.0          5.8         2.2 virginica
 ## 6          7.6         3.0          6.6         2.1 virginica</code></pre>
-<div class="sourceCode" id="cb71"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb71-1"><a href="data-manipulation.html#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(df_virginica)</span></code></pre></div>
+<div class="sourceCode" id="cb175"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb175-1"><a href="data-manipulation.html#cb175-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(df_virginica)</span></code></pre></div>
 <pre><code>## [1] 50  5</code></pre>
 </div>
 <div id="combining-columns-and-rows" class="section level2" number="3.3">
 <h2><span class="header-section-number">3.3</span> Combining Columns and Rows</h2>
-<div class="sourceCode" id="cb73"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb73-1"><a href="data-manipulation.html#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="co"># gathering columns to make long table</span></span>
-<span id="cb73-2"><a href="data-manipulation.html#cb73-2" aria-hidden="true" tabindex="-1"></a>df_long<span class="ot">=</span> <span class="fu">gather</span>(df,Mes_type,length,<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>)</span>
-<span id="cb73-3"><a href="data-manipulation.html#cb73-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_long)</span></code></pre></div>
+<div class="sourceCode" id="cb177"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb177-1"><a href="data-manipulation.html#cb177-1" aria-hidden="true" tabindex="-1"></a><span class="co"># gathering columns to make long table</span></span>
+<span id="cb177-2"><a href="data-manipulation.html#cb177-2" aria-hidden="true" tabindex="-1"></a>df_long<span class="ot">=</span> <span class="fu">gather</span>(df,Mes_type,length,<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>)</span>
+<span id="cb177-3"><a href="data-manipulation.html#cb177-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_long)</span></code></pre></div>
 <pre><code>##   Species     Mes_type length
 ## 1  setosa Sepal.Length    5.1
 ## 2  setosa Sepal.Length    4.9
@@ -372,10 +403,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4  setosa Sepal.Length    4.6
 ## 5  setosa Sepal.Length    5.0
 ## 6  setosa Sepal.Length    5.4</code></pre>
-<div class="sourceCode" id="cb75"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb75-1"><a href="data-manipulation.html#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="co">#grouping and summarizing data</span></span>
-<span id="cb75-2"><a href="data-manipulation.html#cb75-2" aria-hidden="true" tabindex="-1"></a><span class="co"># group by</span></span>
-<span id="cb75-3"><a href="data-manipulation.html#cb75-3" aria-hidden="true" tabindex="-1"></a>df_sumzd<span class="ot">=</span><span class="fu">group_by</span>(df_long,Species)</span>
-<span id="cb75-4"><a href="data-manipulation.html#cb75-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_sumzd)</span></code></pre></div>
+<div class="sourceCode" id="cb179"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb179-1"><a href="data-manipulation.html#cb179-1" aria-hidden="true" tabindex="-1"></a><span class="co">#grouping and summarizing data</span></span>
+<span id="cb179-2"><a href="data-manipulation.html#cb179-2" aria-hidden="true" tabindex="-1"></a><span class="co"># group by</span></span>
+<span id="cb179-3"><a href="data-manipulation.html#cb179-3" aria-hidden="true" tabindex="-1"></a>df_sumzd<span class="ot">=</span><span class="fu">group_by</span>(df_long,Species)</span>
+<span id="cb179-4"><a href="data-manipulation.html#cb179-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_sumzd)</span></code></pre></div>
 <pre><code>## # A tibble: 6 x 3
 ## # Groups:   Species [1]
 ##   Species Mes_type     length
@@ -386,10 +417,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 4 setosa  Sepal.Length    4.6
 ## 5 setosa  Sepal.Length    5  
 ## 6 setosa  Sepal.Length    5.4</code></pre>
-<div class="sourceCode" id="cb77"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb77-1"><a href="data-manipulation.html#cb77-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Summarize</span></span>
-<span id="cb77-2"><a href="data-manipulation.html#cb77-2" aria-hidden="true" tabindex="-1"></a>df_sumzd<span class="ot">=</span><span class="fu">group_by</span>(df_long,Species,Mes_type) <span class="sc">%&gt;%</span> <span class="fu">summarise</span>(<span class="at">mean=</span><span class="fu">mean</span>(length),<span class="at">sd=</span><span class="fu">sd</span>(length))</span></code></pre></div>
+<div class="sourceCode" id="cb181"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb181-1"><a href="data-manipulation.html#cb181-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Summarize</span></span>
+<span id="cb181-2"><a href="data-manipulation.html#cb181-2" aria-hidden="true" tabindex="-1"></a>df_sumzd<span class="ot">=</span><span class="fu">group_by</span>(df_long,Species,Mes_type) <span class="sc">%&gt;%</span> <span class="fu">summarise</span>(<span class="at">mean=</span><span class="fu">mean</span>(length),<span class="at">sd=</span><span class="fu">sd</span>(length))</span></code></pre></div>
 <pre><code>## `summarise()` has grouped output by &#39;Species&#39;. You can override using the `.groups` argument.</code></pre>
-<div class="sourceCode" id="cb79"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb79-1"><a href="data-manipulation.html#cb79-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_sumzd)</span></code></pre></div>
+<div class="sourceCode" id="cb183"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb183-1"><a href="data-manipulation.html#cb183-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_sumzd)</span></code></pre></div>
 <pre><code>## # A tibble: 6 x 4
 ## # Groups:   Species [2]
 ##   Species    Mes_type      mean    sd
@@ -403,131 +434,131 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="basic-bar-plots" class="section level2" number="3.4">
 <h2><span class="header-section-number">3.4</span> Basic Bar Plots</h2>
-<div class="sourceCode" id="cb81"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb81-1"><a href="data-manipulation.html#cb81-1" aria-hidden="true" tabindex="-1"></a><span class="co">#p=ggplot(df_sumzd,aes(x=Species,y=mean))+geom_bar()</span></span>
-<span id="cb81-2"><a href="data-manipulation.html#cb81-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb81-3"><a href="data-manipulation.html#cb81-3" aria-hidden="true" tabindex="-1"></a><span class="co">#p</span></span></code></pre></div>
-<div class="sourceCode" id="cb82"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb82-1"><a href="data-manipulation.html#cb82-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot basic barplot- effect of stat= &quot;identity&quot;</span></span>
-<span id="cb82-2"><a href="data-manipulation.html#cb82-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean))<span class="sc">+</span></span>
-<span id="cb82-3"><a href="data-manipulation.html#cb82-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>)</span>
-<span id="cb82-4"><a href="data-manipulation.html#cb82-4" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
-<div class="sourceCode" id="cb83"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb83-1"><a href="data-manipulation.html#cb83-1" aria-hidden="true" tabindex="-1"></a><span class="co"># fill color</span></span>
-<span id="cb83-2"><a href="data-manipulation.html#cb83-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean))<span class="sc">+</span></span>
-<span id="cb83-3"><a href="data-manipulation.html#cb83-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">fill=</span><span class="st">&quot;red&quot;</span>)</span>
-<span id="cb83-4"><a href="data-manipulation.html#cb83-4" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
-<div class="sourceCode" id="cb84"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb84-1"><a href="data-manipulation.html#cb84-1" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean, <span class="at">fill=</span>Species))<span class="sc">+</span></span>
-<span id="cb84-2"><a href="data-manipulation.html#cb84-2" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>)</span>
-<span id="cb84-3"><a href="data-manipulation.html#cb84-3" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-25-1.png" width="672" />
+<div class="sourceCode" id="cb185"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb185-1"><a href="data-manipulation.html#cb185-1" aria-hidden="true" tabindex="-1"></a><span class="co">#p=ggplot(df_sumzd,aes(x=Species,y=mean))+geom_bar()</span></span>
+<span id="cb185-2"><a href="data-manipulation.html#cb185-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb185-3"><a href="data-manipulation.html#cb185-3" aria-hidden="true" tabindex="-1"></a><span class="co">#p</span></span></code></pre></div>
+<div class="sourceCode" id="cb186"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb186-1"><a href="data-manipulation.html#cb186-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot basic barplot- effect of stat= &quot;identity&quot;</span></span>
+<span id="cb186-2"><a href="data-manipulation.html#cb186-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean))<span class="sc">+</span></span>
+<span id="cb186-3"><a href="data-manipulation.html#cb186-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>)</span>
+<span id="cb186-4"><a href="data-manipulation.html#cb186-4" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-57-1.png" width="672" /></p>
+<div class="sourceCode" id="cb187"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb187-1"><a href="data-manipulation.html#cb187-1" aria-hidden="true" tabindex="-1"></a><span class="co"># fill color</span></span>
+<span id="cb187-2"><a href="data-manipulation.html#cb187-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean))<span class="sc">+</span></span>
+<span id="cb187-3"><a href="data-manipulation.html#cb187-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">fill=</span><span class="st">&quot;red&quot;</span>)</span>
+<span id="cb187-4"><a href="data-manipulation.html#cb187-4" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-58-1.png" width="672" /></p>
+<div class="sourceCode" id="cb188"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb188-1"><a href="data-manipulation.html#cb188-1" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean, <span class="at">fill=</span>Species))<span class="sc">+</span></span>
+<span id="cb188-2"><a href="data-manipulation.html#cb188-2" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>)</span>
+<span id="cb188-3"><a href="data-manipulation.html#cb188-3" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-59-1.png" width="672" />
 # Fill Color - mapping to a variable</p>
-<div class="sourceCode" id="cb85"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb85-1"><a href="data-manipulation.html#cb85-1" aria-hidden="true" tabindex="-1"></a><span class="co"># fill colors- stacked bar plot</span></span>
-<span id="cb85-2"><a href="data-manipulation.html#cb85-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean,<span class="at">fill=</span>Mes_type))<span class="sc">+</span></span>
-<span id="cb85-3"><a href="data-manipulation.html#cb85-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>)</span>
-<span id="cb85-4"><a href="data-manipulation.html#cb85-4" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
-<div class="sourceCode" id="cb86"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb86-1"><a href="data-manipulation.html#cb86-1" aria-hidden="true" tabindex="-1"></a><span class="co"># fill colors- grouped bar plot </span></span>
-<span id="cb86-2"><a href="data-manipulation.html#cb86-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean,<span class="at">fill=</span>Mes_type))<span class="sc">+</span></span>
-<span id="cb86-3"><a href="data-manipulation.html#cb86-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">position=</span><span class="st">&quot;dodge&quot;</span>)</span>
-<span id="cb86-4"><a href="data-manipulation.html#cb86-4" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
-<div class="sourceCode" id="cb87"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb87-1"><a href="data-manipulation.html#cb87-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Error bars</span></span>
-<span id="cb87-2"><a href="data-manipulation.html#cb87-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean,<span class="at">fill=</span>Mes_type))<span class="sc">+</span></span>
-<span id="cb87-3"><a href="data-manipulation.html#cb87-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">position=</span><span class="st">&quot;dodge&quot;</span>) <span class="sc">+</span></span>
-<span id="cb87-4"><a href="data-manipulation.html#cb87-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>mean<span class="sc">-</span>sd,<span class="at">ymax=</span>mean<span class="sc">+</span>sd))</span>
-<span id="cb87-5"><a href="data-manipulation.html#cb87-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb87-6"><a href="data-manipulation.html#cb87-6" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-28-1.png" width="672" /></p>
-<div class="sourceCode" id="cb88"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb88-1"><a href="data-manipulation.html#cb88-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Error bars width</span></span>
-<span id="cb88-2"><a href="data-manipulation.html#cb88-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean,<span class="at">fill=</span>Mes_type))<span class="sc">+</span></span>
-<span id="cb88-3"><a href="data-manipulation.html#cb88-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">position=</span><span class="st">&quot;dodge&quot;</span>) <span class="sc">+</span></span>
-<span id="cb88-4"><a href="data-manipulation.html#cb88-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>mean<span class="sc">-</span>sd,<span class="at">ymax=</span>mean<span class="sc">+</span>sd),<span class="at">width=</span><span class="fl">0.25</span>)</span>
-<span id="cb88-5"><a href="data-manipulation.html#cb88-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb88-6"><a href="data-manipulation.html#cb88-6" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
-<div class="sourceCode" id="cb89"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb89-1"><a href="data-manipulation.html#cb89-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Error bars width, size,position</span></span>
-<span id="cb89-2"><a href="data-manipulation.html#cb89-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean,<span class="at">fill=</span>Mes_type))<span class="sc">+</span></span>
-<span id="cb89-3"><a href="data-manipulation.html#cb89-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">position=</span><span class="st">&quot;dodge&quot;</span>) <span class="sc">+</span></span>
-<span id="cb89-4"><a href="data-manipulation.html#cb89-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>mean<span class="sc">-</span>sd,<span class="at">ymax=</span>mean<span class="sc">+</span>sd),<span class="at">width=</span><span class="fl">0.25</span>,</span>
-<span id="cb89-5"><a href="data-manipulation.html#cb89-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">size=</span><span class="dv">1</span>,<span class="at">position=</span> <span class="fu">position_dodge</span>(<span class="fl">0.9</span>))</span>
-<span id="cb89-6"><a href="data-manipulation.html#cb89-6" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
-<div class="sourceCode" id="cb90"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb90-1"><a href="data-manipulation.html#cb90-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Error bars width,size, position, alpha</span></span>
-<span id="cb90-2"><a href="data-manipulation.html#cb90-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean,<span class="at">fill=</span>Mes_type))<span class="sc">+</span></span>
-<span id="cb90-3"><a href="data-manipulation.html#cb90-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">position=</span><span class="st">&quot;dodge&quot;</span>) <span class="sc">+</span></span>
-<span id="cb90-4"><a href="data-manipulation.html#cb90-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>mean<span class="sc">-</span>sd,<span class="at">ymax=</span>mean<span class="sc">+</span>sd),<span class="at">width=</span><span class="fl">0.25</span>,</span>
-<span id="cb90-5"><a href="data-manipulation.html#cb90-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">size=</span><span class="dv">1</span>,<span class="at">position=</span> <span class="fu">position_dodge</span>(<span class="fl">0.9</span>),<span class="at">alpha=</span><span class="fl">0.3</span>)</span>
-<span id="cb90-6"><a href="data-manipulation.html#cb90-6" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-31-1.png" width="672" /></p>
-<div class="sourceCode" id="cb91"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb91-1"><a href="data-manipulation.html#cb91-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Error bars width,size, position, alpha and labels</span></span>
-<span id="cb91-2"><a href="data-manipulation.html#cb91-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean,<span class="at">fill=</span>Mes_type,<span class="at">label=</span>mean))<span class="sc">+</span></span>
-<span id="cb91-3"><a href="data-manipulation.html#cb91-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">position=</span><span class="st">&quot;dodge&quot;</span>) <span class="sc">+</span></span>
-<span id="cb91-4"><a href="data-manipulation.html#cb91-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>mean<span class="sc">-</span>sd,<span class="at">ymax=</span>mean<span class="sc">+</span>sd),<span class="at">width=</span><span class="fl">0.25</span>,</span>
-<span id="cb91-5"><a href="data-manipulation.html#cb91-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">size=</span><span class="dv">1</span>,<span class="at">position=</span> <span class="fu">position_dodge</span>(<span class="fl">0.9</span>), <span class="at">alpha=</span><span class="fl">0.3</span>)</span>
-<span id="cb91-6"><a href="data-manipulation.html#cb91-6" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-32-1.png" width="672" /></p>
-<div class="sourceCode" id="cb92"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb92-1"><a href="data-manipulation.html#cb92-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Error bars width,size, position, alpha and labels</span></span>
-<span id="cb92-2"><a href="data-manipulation.html#cb92-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean,<span class="at">fill=</span>Mes_type,<span class="at">label=</span>mean))<span class="sc">+</span></span>
-<span id="cb92-3"><a href="data-manipulation.html#cb92-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">position=</span><span class="st">&quot;dodge&quot;</span>) <span class="sc">+</span></span>
-<span id="cb92-4"><a href="data-manipulation.html#cb92-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>mean<span class="sc">-</span>sd,<span class="at">ymax=</span>mean<span class="sc">+</span>sd),<span class="at">width=</span><span class="fl">0.25</span>,</span>
-<span id="cb92-5"><a href="data-manipulation.html#cb92-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">size=</span><span class="dv">1</span>,<span class="at">position=</span> <span class="fu">position_dodge</span>(<span class="fl">0.9</span>), <span class="at">alpha=</span><span class="fl">0.3</span>)<span class="sc">+</span></span>
-<span id="cb92-6"><a href="data-manipulation.html#cb92-6" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_text</span>(<span class="at">position=</span><span class="fu">position_dodge</span>(<span class="fl">0.9</span>))</span>
-<span id="cb92-7"><a href="data-manipulation.html#cb92-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb92-8"><a href="data-manipulation.html#cb92-8" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-33-1.png" width="672" /></p>
-<div class="sourceCode" id="cb93"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb93-1"><a href="data-manipulation.html#cb93-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Error bars width,size, position, alpha and labels, label position corrected</span></span>
-<span id="cb93-2"><a href="data-manipulation.html#cb93-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean,<span class="at">fill=</span>Mes_type,<span class="at">label=</span>mean))<span class="sc">+</span></span>
-<span id="cb93-3"><a href="data-manipulation.html#cb93-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">position=</span><span class="st">&quot;dodge&quot;</span>) <span class="sc">+</span></span>
-<span id="cb93-4"><a href="data-manipulation.html#cb93-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>mean<span class="sc">-</span>sd,<span class="at">ymax=</span>mean<span class="sc">+</span>sd),<span class="at">width=</span><span class="fl">0.25</span>,</span>
-<span id="cb93-5"><a href="data-manipulation.html#cb93-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">size=</span><span class="dv">1</span>,<span class="at">position=</span> <span class="fu">position_dodge</span>(<span class="fl">0.9</span>), <span class="at">alpha=</span><span class="fl">0.3</span>)<span class="sc">+</span></span>
-<span id="cb93-6"><a href="data-manipulation.html#cb93-6" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_text</span>(<span class="at">position=</span><span class="fu">position_dodge</span>(<span class="fl">0.9</span>),<span class="at">vjust=</span><span class="sc">-</span><span class="dv">1</span>)</span>
-<span id="cb93-7"><a href="data-manipulation.html#cb93-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb93-8"><a href="data-manipulation.html#cb93-8" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-34-1.png" width="672" /></p>
-<div class="sourceCode" id="cb94"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb94-1"><a href="data-manipulation.html#cb94-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Error bars width,size, position, alpha and labels, label position more corrected</span></span>
-<span id="cb94-2"><a href="data-manipulation.html#cb94-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean,<span class="at">fill=</span>Mes_type,<span class="at">label=</span>mean))<span class="sc">+</span></span>
-<span id="cb94-3"><a href="data-manipulation.html#cb94-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">position=</span><span class="st">&quot;dodge&quot;</span>) <span class="sc">+</span></span>
-<span id="cb94-4"><a href="data-manipulation.html#cb94-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>mean<span class="sc">-</span>sd,<span class="at">ymax=</span>mean<span class="sc">+</span>sd),<span class="at">width=</span><span class="fl">0.25</span>,</span>
-<span id="cb94-5"><a href="data-manipulation.html#cb94-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">size=</span><span class="dv">1</span>,<span class="at">position=</span> <span class="fu">position_dodge</span>(<span class="fl">0.9</span>), <span class="at">alpha=</span><span class="fl">0.3</span>)<span class="sc">+</span></span>
-<span id="cb94-6"><a href="data-manipulation.html#cb94-6" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_text</span>(<span class="at">position=</span><span class="fu">position_dodge</span>(<span class="fl">0.9</span>),<span class="at">vjust=</span><span class="sc">-</span><span class="fl">0.5</span>, <span class="at">hjust=</span><span class="fl">1.2</span>)</span>
-<span id="cb94-7"><a href="data-manipulation.html#cb94-7" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-35-1.png" width="672" /></p>
-<div class="sourceCode" id="cb95"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb95-1"><a href="data-manipulation.html#cb95-1" aria-hidden="true" tabindex="-1"></a><span class="co">#theme classic</span></span>
-<span id="cb95-2"><a href="data-manipulation.html#cb95-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean,<span class="at">fill=</span>Mes_type,<span class="at">label=</span>mean))<span class="sc">+</span></span>
-<span id="cb95-3"><a href="data-manipulation.html#cb95-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">position=</span><span class="st">&quot;dodge&quot;</span>) <span class="sc">+</span></span>
-<span id="cb95-4"><a href="data-manipulation.html#cb95-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>mean<span class="sc">-</span>sd,<span class="at">ymax=</span>mean<span class="sc">+</span>sd),<span class="at">width=</span><span class="fl">0.25</span>,</span>
-<span id="cb95-5"><a href="data-manipulation.html#cb95-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">size=</span><span class="dv">1</span>,<span class="at">position=</span> <span class="fu">position_dodge</span>(<span class="fl">0.9</span>), <span class="at">alpha=</span><span class="fl">0.3</span>)<span class="sc">+</span></span>
-<span id="cb95-6"><a href="data-manipulation.html#cb95-6" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_text</span>(<span class="at">position=</span><span class="fu">position_dodge</span>(<span class="fl">0.9</span>),<span class="at">vjust=</span><span class="sc">-</span><span class="fl">0.5</span>, <span class="at">hjust=</span><span class="dv">1</span>)<span class="sc">+</span></span>
-<span id="cb95-7"><a href="data-manipulation.html#cb95-7" aria-hidden="true" tabindex="-1"></a>   <span class="fu">theme_classic</span>()</span>
-<span id="cb95-8"><a href="data-manipulation.html#cb95-8" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-36-1.png" width="672" /></p>
-<div class="sourceCode" id="cb96"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb96-1"><a href="data-manipulation.html#cb96-1" aria-hidden="true" tabindex="-1"></a><span class="co">#theme bw</span></span>
-<span id="cb96-2"><a href="data-manipulation.html#cb96-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean,<span class="at">fill=</span>Mes_type,<span class="at">label=</span>mean))<span class="sc">+</span></span>
-<span id="cb96-3"><a href="data-manipulation.html#cb96-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">position=</span><span class="st">&quot;dodge&quot;</span>) <span class="sc">+</span></span>
-<span id="cb96-4"><a href="data-manipulation.html#cb96-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>mean<span class="sc">-</span>sd,<span class="at">ymax=</span>mean<span class="sc">+</span>sd),<span class="at">width=</span><span class="fl">0.25</span>,</span>
-<span id="cb96-5"><a href="data-manipulation.html#cb96-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">size=</span><span class="dv">1</span>,<span class="at">position=</span> <span class="fu">position_dodge</span>(<span class="fl">0.9</span>), <span class="at">alpha=</span><span class="fl">0.3</span>)<span class="sc">+</span></span>
-<span id="cb96-6"><a href="data-manipulation.html#cb96-6" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_text</span>(<span class="at">position=</span><span class="fu">position_dodge</span>(<span class="fl">0.9</span>),<span class="at">vjust=</span><span class="sc">-</span><span class="fl">0.5</span>, <span class="at">hjust=</span><span class="fl">1.1</span>)<span class="sc">+</span></span>
-<span id="cb96-7"><a href="data-manipulation.html#cb96-7" aria-hidden="true" tabindex="-1"></a>   <span class="fu">theme_bw</span>()</span>
-<span id="cb96-8"><a href="data-manipulation.html#cb96-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb96-9"><a href="data-manipulation.html#cb96-9" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-37-1.png" width="672" /></p>
-<div class="sourceCode" id="cb97"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb97-1"><a href="data-manipulation.html#cb97-1" aria-hidden="true" tabindex="-1"></a><span class="co"># I don&#39;t like this plot.</span></span>
-<span id="cb97-2"><a href="data-manipulation.html#cb97-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean,<span class="at">fill=</span>Mes_type))<span class="sc">+</span></span>
-<span id="cb97-3"><a href="data-manipulation.html#cb97-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">position=</span><span class="st">&quot;dodge&quot;</span>) <span class="sc">+</span></span>
-<span id="cb97-4"><a href="data-manipulation.html#cb97-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>mean<span class="sc">-</span>sd,<span class="at">ymax=</span>mean<span class="sc">+</span>sd),<span class="at">width=</span><span class="fl">0.25</span>,</span>
-<span id="cb97-5"><a href="data-manipulation.html#cb97-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">size=</span><span class="dv">1</span>,<span class="at">position=</span> <span class="fu">position_dodge</span>(<span class="fl">0.9</span>), <span class="at">alpha=</span><span class="fl">0.3</span>)<span class="sc">+</span></span>
-<span id="cb97-6"><a href="data-manipulation.html#cb97-6" aria-hidden="true" tabindex="-1"></a>      <span class="fu">theme_bw</span>()</span>
-<span id="cb97-7"><a href="data-manipulation.html#cb97-7" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-38-1.png" width="672" /></p>
-<div class="sourceCode" id="cb98"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb98-1"><a href="data-manipulation.html#cb98-1" aria-hidden="true" tabindex="-1"></a><span class="co"># coord flip, this to when x axis labels are very long and overlap each other</span></span>
-<span id="cb98-2"><a href="data-manipulation.html#cb98-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean,<span class="at">fill=</span>Mes_type))<span class="sc">+</span></span>
-<span id="cb98-3"><a href="data-manipulation.html#cb98-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">position=</span><span class="st">&quot;dodge&quot;</span>) <span class="sc">+</span></span>
-<span id="cb98-4"><a href="data-manipulation.html#cb98-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>mean<span class="sc">-</span>sd,<span class="at">ymax=</span>mean<span class="sc">+</span>sd),<span class="at">width=</span><span class="fl">0.25</span>,</span>
-<span id="cb98-5"><a href="data-manipulation.html#cb98-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">size=</span><span class="dv">1</span>,<span class="at">position=</span> <span class="fu">position_dodge</span>(<span class="fl">0.9</span>), <span class="at">alpha=</span><span class="fl">0.3</span>)<span class="sc">+</span></span>
-<span id="cb98-6"><a href="data-manipulation.html#cb98-6" aria-hidden="true" tabindex="-1"></a>   <span class="fu">theme_bw</span>()<span class="sc">+</span></span>
-<span id="cb98-7"><a href="data-manipulation.html#cb98-7" aria-hidden="true" tabindex="-1"></a>   <span class="fu">coord_flip</span>()</span>
-<span id="cb98-8"><a href="data-manipulation.html#cb98-8" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-39-1.png" width="672" /></p>
+<div class="sourceCode" id="cb189"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb189-1"><a href="data-manipulation.html#cb189-1" aria-hidden="true" tabindex="-1"></a><span class="co"># fill colors- stacked bar plot</span></span>
+<span id="cb189-2"><a href="data-manipulation.html#cb189-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean,<span class="at">fill=</span>Mes_type))<span class="sc">+</span></span>
+<span id="cb189-3"><a href="data-manipulation.html#cb189-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>)</span>
+<span id="cb189-4"><a href="data-manipulation.html#cb189-4" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-60-1.png" width="672" /></p>
+<div class="sourceCode" id="cb190"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb190-1"><a href="data-manipulation.html#cb190-1" aria-hidden="true" tabindex="-1"></a><span class="co"># fill colors- grouped bar plot </span></span>
+<span id="cb190-2"><a href="data-manipulation.html#cb190-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean,<span class="at">fill=</span>Mes_type))<span class="sc">+</span></span>
+<span id="cb190-3"><a href="data-manipulation.html#cb190-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">position=</span><span class="st">&quot;dodge&quot;</span>)</span>
+<span id="cb190-4"><a href="data-manipulation.html#cb190-4" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-61-1.png" width="672" /></p>
+<div class="sourceCode" id="cb191"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb191-1"><a href="data-manipulation.html#cb191-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Error bars</span></span>
+<span id="cb191-2"><a href="data-manipulation.html#cb191-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean,<span class="at">fill=</span>Mes_type))<span class="sc">+</span></span>
+<span id="cb191-3"><a href="data-manipulation.html#cb191-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">position=</span><span class="st">&quot;dodge&quot;</span>) <span class="sc">+</span></span>
+<span id="cb191-4"><a href="data-manipulation.html#cb191-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>mean<span class="sc">-</span>sd,<span class="at">ymax=</span>mean<span class="sc">+</span>sd))</span>
+<span id="cb191-5"><a href="data-manipulation.html#cb191-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb191-6"><a href="data-manipulation.html#cb191-6" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-62-1.png" width="672" /></p>
+<div class="sourceCode" id="cb192"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb192-1"><a href="data-manipulation.html#cb192-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Error bars width</span></span>
+<span id="cb192-2"><a href="data-manipulation.html#cb192-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean,<span class="at">fill=</span>Mes_type))<span class="sc">+</span></span>
+<span id="cb192-3"><a href="data-manipulation.html#cb192-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">position=</span><span class="st">&quot;dodge&quot;</span>) <span class="sc">+</span></span>
+<span id="cb192-4"><a href="data-manipulation.html#cb192-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>mean<span class="sc">-</span>sd,<span class="at">ymax=</span>mean<span class="sc">+</span>sd),<span class="at">width=</span><span class="fl">0.25</span>)</span>
+<span id="cb192-5"><a href="data-manipulation.html#cb192-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb192-6"><a href="data-manipulation.html#cb192-6" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-63-1.png" width="672" /></p>
+<div class="sourceCode" id="cb193"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb193-1"><a href="data-manipulation.html#cb193-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Error bars width, size,position</span></span>
+<span id="cb193-2"><a href="data-manipulation.html#cb193-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean,<span class="at">fill=</span>Mes_type))<span class="sc">+</span></span>
+<span id="cb193-3"><a href="data-manipulation.html#cb193-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">position=</span><span class="st">&quot;dodge&quot;</span>) <span class="sc">+</span></span>
+<span id="cb193-4"><a href="data-manipulation.html#cb193-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>mean<span class="sc">-</span>sd,<span class="at">ymax=</span>mean<span class="sc">+</span>sd),<span class="at">width=</span><span class="fl">0.25</span>,</span>
+<span id="cb193-5"><a href="data-manipulation.html#cb193-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">size=</span><span class="dv">1</span>,<span class="at">position=</span> <span class="fu">position_dodge</span>(<span class="fl">0.9</span>))</span>
+<span id="cb193-6"><a href="data-manipulation.html#cb193-6" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-64-1.png" width="672" /></p>
+<div class="sourceCode" id="cb194"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb194-1"><a href="data-manipulation.html#cb194-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Error bars width,size, position, alpha</span></span>
+<span id="cb194-2"><a href="data-manipulation.html#cb194-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean,<span class="at">fill=</span>Mes_type))<span class="sc">+</span></span>
+<span id="cb194-3"><a href="data-manipulation.html#cb194-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">position=</span><span class="st">&quot;dodge&quot;</span>) <span class="sc">+</span></span>
+<span id="cb194-4"><a href="data-manipulation.html#cb194-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>mean<span class="sc">-</span>sd,<span class="at">ymax=</span>mean<span class="sc">+</span>sd),<span class="at">width=</span><span class="fl">0.25</span>,</span>
+<span id="cb194-5"><a href="data-manipulation.html#cb194-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">size=</span><span class="dv">1</span>,<span class="at">position=</span> <span class="fu">position_dodge</span>(<span class="fl">0.9</span>),<span class="at">alpha=</span><span class="fl">0.3</span>)</span>
+<span id="cb194-6"><a href="data-manipulation.html#cb194-6" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-65-1.png" width="672" /></p>
+<div class="sourceCode" id="cb195"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb195-1"><a href="data-manipulation.html#cb195-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Error bars width,size, position, alpha and labels</span></span>
+<span id="cb195-2"><a href="data-manipulation.html#cb195-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean,<span class="at">fill=</span>Mes_type,<span class="at">label=</span>mean))<span class="sc">+</span></span>
+<span id="cb195-3"><a href="data-manipulation.html#cb195-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">position=</span><span class="st">&quot;dodge&quot;</span>) <span class="sc">+</span></span>
+<span id="cb195-4"><a href="data-manipulation.html#cb195-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>mean<span class="sc">-</span>sd,<span class="at">ymax=</span>mean<span class="sc">+</span>sd),<span class="at">width=</span><span class="fl">0.25</span>,</span>
+<span id="cb195-5"><a href="data-manipulation.html#cb195-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">size=</span><span class="dv">1</span>,<span class="at">position=</span> <span class="fu">position_dodge</span>(<span class="fl">0.9</span>), <span class="at">alpha=</span><span class="fl">0.3</span>)</span>
+<span id="cb195-6"><a href="data-manipulation.html#cb195-6" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-66-1.png" width="672" /></p>
+<div class="sourceCode" id="cb196"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb196-1"><a href="data-manipulation.html#cb196-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Error bars width,size, position, alpha and labels</span></span>
+<span id="cb196-2"><a href="data-manipulation.html#cb196-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean,<span class="at">fill=</span>Mes_type,<span class="at">label=</span>mean))<span class="sc">+</span></span>
+<span id="cb196-3"><a href="data-manipulation.html#cb196-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">position=</span><span class="st">&quot;dodge&quot;</span>) <span class="sc">+</span></span>
+<span id="cb196-4"><a href="data-manipulation.html#cb196-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>mean<span class="sc">-</span>sd,<span class="at">ymax=</span>mean<span class="sc">+</span>sd),<span class="at">width=</span><span class="fl">0.25</span>,</span>
+<span id="cb196-5"><a href="data-manipulation.html#cb196-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">size=</span><span class="dv">1</span>,<span class="at">position=</span> <span class="fu">position_dodge</span>(<span class="fl">0.9</span>), <span class="at">alpha=</span><span class="fl">0.3</span>)<span class="sc">+</span></span>
+<span id="cb196-6"><a href="data-manipulation.html#cb196-6" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_text</span>(<span class="at">position=</span><span class="fu">position_dodge</span>(<span class="fl">0.9</span>))</span>
+<span id="cb196-7"><a href="data-manipulation.html#cb196-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb196-8"><a href="data-manipulation.html#cb196-8" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-67-1.png" width="672" /></p>
+<div class="sourceCode" id="cb197"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb197-1"><a href="data-manipulation.html#cb197-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Error bars width,size, position, alpha and labels, label position corrected</span></span>
+<span id="cb197-2"><a href="data-manipulation.html#cb197-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean,<span class="at">fill=</span>Mes_type,<span class="at">label=</span>mean))<span class="sc">+</span></span>
+<span id="cb197-3"><a href="data-manipulation.html#cb197-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">position=</span><span class="st">&quot;dodge&quot;</span>) <span class="sc">+</span></span>
+<span id="cb197-4"><a href="data-manipulation.html#cb197-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>mean<span class="sc">-</span>sd,<span class="at">ymax=</span>mean<span class="sc">+</span>sd),<span class="at">width=</span><span class="fl">0.25</span>,</span>
+<span id="cb197-5"><a href="data-manipulation.html#cb197-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">size=</span><span class="dv">1</span>,<span class="at">position=</span> <span class="fu">position_dodge</span>(<span class="fl">0.9</span>), <span class="at">alpha=</span><span class="fl">0.3</span>)<span class="sc">+</span></span>
+<span id="cb197-6"><a href="data-manipulation.html#cb197-6" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_text</span>(<span class="at">position=</span><span class="fu">position_dodge</span>(<span class="fl">0.9</span>),<span class="at">vjust=</span><span class="sc">-</span><span class="dv">1</span>)</span>
+<span id="cb197-7"><a href="data-manipulation.html#cb197-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb197-8"><a href="data-manipulation.html#cb197-8" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-68-1.png" width="672" /></p>
+<div class="sourceCode" id="cb198"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb198-1"><a href="data-manipulation.html#cb198-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Error bars width,size, position, alpha and labels, label position more corrected</span></span>
+<span id="cb198-2"><a href="data-manipulation.html#cb198-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean,<span class="at">fill=</span>Mes_type,<span class="at">label=</span>mean))<span class="sc">+</span></span>
+<span id="cb198-3"><a href="data-manipulation.html#cb198-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">position=</span><span class="st">&quot;dodge&quot;</span>) <span class="sc">+</span></span>
+<span id="cb198-4"><a href="data-manipulation.html#cb198-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>mean<span class="sc">-</span>sd,<span class="at">ymax=</span>mean<span class="sc">+</span>sd),<span class="at">width=</span><span class="fl">0.25</span>,</span>
+<span id="cb198-5"><a href="data-manipulation.html#cb198-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">size=</span><span class="dv">1</span>,<span class="at">position=</span> <span class="fu">position_dodge</span>(<span class="fl">0.9</span>), <span class="at">alpha=</span><span class="fl">0.3</span>)<span class="sc">+</span></span>
+<span id="cb198-6"><a href="data-manipulation.html#cb198-6" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_text</span>(<span class="at">position=</span><span class="fu">position_dodge</span>(<span class="fl">0.9</span>),<span class="at">vjust=</span><span class="sc">-</span><span class="fl">0.5</span>, <span class="at">hjust=</span><span class="fl">1.2</span>)</span>
+<span id="cb198-7"><a href="data-manipulation.html#cb198-7" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-69-1.png" width="672" /></p>
+<div class="sourceCode" id="cb199"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb199-1"><a href="data-manipulation.html#cb199-1" aria-hidden="true" tabindex="-1"></a><span class="co">#theme classic</span></span>
+<span id="cb199-2"><a href="data-manipulation.html#cb199-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean,<span class="at">fill=</span>Mes_type,<span class="at">label=</span>mean))<span class="sc">+</span></span>
+<span id="cb199-3"><a href="data-manipulation.html#cb199-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">position=</span><span class="st">&quot;dodge&quot;</span>) <span class="sc">+</span></span>
+<span id="cb199-4"><a href="data-manipulation.html#cb199-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>mean<span class="sc">-</span>sd,<span class="at">ymax=</span>mean<span class="sc">+</span>sd),<span class="at">width=</span><span class="fl">0.25</span>,</span>
+<span id="cb199-5"><a href="data-manipulation.html#cb199-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">size=</span><span class="dv">1</span>,<span class="at">position=</span> <span class="fu">position_dodge</span>(<span class="fl">0.9</span>), <span class="at">alpha=</span><span class="fl">0.3</span>)<span class="sc">+</span></span>
+<span id="cb199-6"><a href="data-manipulation.html#cb199-6" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_text</span>(<span class="at">position=</span><span class="fu">position_dodge</span>(<span class="fl">0.9</span>),<span class="at">vjust=</span><span class="sc">-</span><span class="fl">0.5</span>, <span class="at">hjust=</span><span class="dv">1</span>)<span class="sc">+</span></span>
+<span id="cb199-7"><a href="data-manipulation.html#cb199-7" aria-hidden="true" tabindex="-1"></a>   <span class="fu">theme_classic</span>()</span>
+<span id="cb199-8"><a href="data-manipulation.html#cb199-8" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-70-1.png" width="672" /></p>
+<div class="sourceCode" id="cb200"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb200-1"><a href="data-manipulation.html#cb200-1" aria-hidden="true" tabindex="-1"></a><span class="co">#theme bw</span></span>
+<span id="cb200-2"><a href="data-manipulation.html#cb200-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean,<span class="at">fill=</span>Mes_type,<span class="at">label=</span>mean))<span class="sc">+</span></span>
+<span id="cb200-3"><a href="data-manipulation.html#cb200-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">position=</span><span class="st">&quot;dodge&quot;</span>) <span class="sc">+</span></span>
+<span id="cb200-4"><a href="data-manipulation.html#cb200-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>mean<span class="sc">-</span>sd,<span class="at">ymax=</span>mean<span class="sc">+</span>sd),<span class="at">width=</span><span class="fl">0.25</span>,</span>
+<span id="cb200-5"><a href="data-manipulation.html#cb200-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">size=</span><span class="dv">1</span>,<span class="at">position=</span> <span class="fu">position_dodge</span>(<span class="fl">0.9</span>), <span class="at">alpha=</span><span class="fl">0.3</span>)<span class="sc">+</span></span>
+<span id="cb200-6"><a href="data-manipulation.html#cb200-6" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_text</span>(<span class="at">position=</span><span class="fu">position_dodge</span>(<span class="fl">0.9</span>),<span class="at">vjust=</span><span class="sc">-</span><span class="fl">0.5</span>, <span class="at">hjust=</span><span class="fl">1.1</span>)<span class="sc">+</span></span>
+<span id="cb200-7"><a href="data-manipulation.html#cb200-7" aria-hidden="true" tabindex="-1"></a>   <span class="fu">theme_bw</span>()</span>
+<span id="cb200-8"><a href="data-manipulation.html#cb200-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb200-9"><a href="data-manipulation.html#cb200-9" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-71-1.png" width="672" /></p>
+<div class="sourceCode" id="cb201"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb201-1"><a href="data-manipulation.html#cb201-1" aria-hidden="true" tabindex="-1"></a><span class="co"># I don&#39;t like this plot.</span></span>
+<span id="cb201-2"><a href="data-manipulation.html#cb201-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean,<span class="at">fill=</span>Mes_type))<span class="sc">+</span></span>
+<span id="cb201-3"><a href="data-manipulation.html#cb201-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">position=</span><span class="st">&quot;dodge&quot;</span>) <span class="sc">+</span></span>
+<span id="cb201-4"><a href="data-manipulation.html#cb201-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>mean<span class="sc">-</span>sd,<span class="at">ymax=</span>mean<span class="sc">+</span>sd),<span class="at">width=</span><span class="fl">0.25</span>,</span>
+<span id="cb201-5"><a href="data-manipulation.html#cb201-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">size=</span><span class="dv">1</span>,<span class="at">position=</span> <span class="fu">position_dodge</span>(<span class="fl">0.9</span>), <span class="at">alpha=</span><span class="fl">0.3</span>)<span class="sc">+</span></span>
+<span id="cb201-6"><a href="data-manipulation.html#cb201-6" aria-hidden="true" tabindex="-1"></a>      <span class="fu">theme_bw</span>()</span>
+<span id="cb201-7"><a href="data-manipulation.html#cb201-7" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-72-1.png" width="672" /></p>
+<div class="sourceCode" id="cb202"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb202-1"><a href="data-manipulation.html#cb202-1" aria-hidden="true" tabindex="-1"></a><span class="co"># coord flip, this to when x axis labels are very long and overlap each other</span></span>
+<span id="cb202-2"><a href="data-manipulation.html#cb202-2" aria-hidden="true" tabindex="-1"></a>p<span class="ot">=</span><span class="fu">ggplot</span>(df_sumzd,<span class="fu">aes</span>(<span class="at">x=</span>Species,<span class="at">y=</span>mean,<span class="at">fill=</span>Mes_type))<span class="sc">+</span></span>
+<span id="cb202-3"><a href="data-manipulation.html#cb202-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_bar</span>(<span class="at">stat=</span><span class="st">&quot;identity&quot;</span>,<span class="at">position=</span><span class="st">&quot;dodge&quot;</span>) <span class="sc">+</span></span>
+<span id="cb202-4"><a href="data-manipulation.html#cb202-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>mean<span class="sc">-</span>sd,<span class="at">ymax=</span>mean<span class="sc">+</span>sd),<span class="at">width=</span><span class="fl">0.25</span>,</span>
+<span id="cb202-5"><a href="data-manipulation.html#cb202-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">size=</span><span class="dv">1</span>,<span class="at">position=</span> <span class="fu">position_dodge</span>(<span class="fl">0.9</span>), <span class="at">alpha=</span><span class="fl">0.3</span>)<span class="sc">+</span></span>
+<span id="cb202-6"><a href="data-manipulation.html#cb202-6" aria-hidden="true" tabindex="-1"></a>   <span class="fu">theme_bw</span>()<span class="sc">+</span></span>
+<span id="cb202-7"><a href="data-manipulation.html#cb202-7" aria-hidden="true" tabindex="-1"></a>   <span class="fu">coord_flip</span>()</span>
+<span id="cb202-8"><a href="data-manipulation.html#cb202-8" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-73-1.png" width="672" /></p>
 <p>#That’s it for bar plot.</p>
 
 </div>

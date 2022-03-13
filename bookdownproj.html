@@ -9,11 +9,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="Dennis E. Cabais" />
+<meta name="author" content="Kyla McConnell" />
 
-<meta name="date" content="2022-03-12" />
+<meta name="date" content="2020-12-21" />
 
-<title>MATH6200</title>
+<title>Intro to R</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -371,16 +371,69 @@ pre code {
 
 
 
-<h1 class="title toc-ignore">MATH6200</h1>
-<h4 class="author">Dennis E. Cabais</h4>
-<h4 class="date">2022-03-12</h4>
+<h1 class="title toc-ignore">Intro to R</h1>
+<h4 class="author">Kyla McConnell</h4>
+<h4 class="date">12/21/2020</h4>
 
 </div>
 
 
 <div id="about" class="section level1 unnumbered">
 <h1 class="unnumbered">About</h1>
+<p><em>Why should you learn R?</em></p>
+<p>It’s…</p>
+<ul>
+<li><p>totally free!</p></li>
+<li><p>open-source</p></li>
+<li><p>a scripting language (reproducible and transparent)</p></li>
+<li><p>an established tool with tons of tutorials and help pages</p></li>
+<li><p>an amazing and inclusive community</p></li>
+</ul>
+<div id="first-steps" class="section level2 unnumbered">
+<h2 class="unnumbered">First steps</h2>
+<p>R = programming language that can be written directly into your computer’s console/terminal</p>
+<p>R-Studio = integrated development environment (IDE) with lots of features</p>
+<p>Almost all R-users have both installed</p>
+<div id="r-studio" class="section level3 unnumbered">
+<h3 class="unnumbered">R-Studio</h3>
+<p>Four panels:</p>
+<p>Top-left: scripting panel – write and save code (may only open when you open a new file)</p>
+<p>Bottom-left: console panel – input/output that won’t be saved</p>
+<p>Top-right: environment panel – dataframes, variables (and sometimes has other features too, depending on what you’re working with)</p>
+<p>Bottom-right: install and update packages, preview plots, read help files, and some other features</p>
+</div>
+<div id="r-script-.r" class="section level3 unnumbered">
+<h3 class="unnumbered">R script (.R)</h3>
+<p>File -&gt; New File -&gt; R Script</p>
+<ul>
+<li><p>simple: only code</p></li>
+<li><p>write lines of code in the order they are meant to be run</p></li>
+<li><p>run each line by clicking that line and pressing Control + R (on Windows) or Cmd + Enter (on Mac)</p></li>
+<li><p>output shows below, in console panel (number in bracket shows amount of output if there is more than one line)</p></li>
+<li><p>Try it out: 5 + 5</p></li>
+<li><p>comments that are not read as code: #</p></li>
+</ul>
+</div>
+<div id="r-markdown-file-.rmd" class="section level3 unnumbered">
+<h3 class="unnumbered">R-Markdown file (.Rmd)</h3>
+<p>File -&gt; New File -&gt; R Markdown</p>
+<ul>
+<li><p>R-Markdown: more complex, both code and text, can also include images and some basic formatting (## for headers)</p></li>
+<li><p>YAML information at top:</p></li>
+<li><p>text in whitespace = text (unlike in an R script)</p>
+<ul>
+<li>keep notes or leave a record of your decisions</li>
+</ul></li>
+<li><p>code needs a code chunk – type it with three backticks or use Insert in the top bar and select R</p></li>
+</ul>
+<p>Run code: - press Control + R (on Windows) or Cmd + Enter (on Mac) with your cursor in the line - use green right-pointing arrow at right edge of code block - arrow with line under it -&gt; runs all code chunks above (but not the current one)</p>
+<p>Output: - directly below code block in preview window</p>
+<ul>
+<li>Can also use (#) to denote lines that are comments and shouldn’t be read as R code</li>
+</ul>
 <!--chapter:end:index.Rmd-->
+</div>
+</div>
 </div>
 <div id="data-in-r" class="section level1">
 <h1>Data in R</h1>
@@ -434,16 +487,500 @@ data1.data &lt;- data.frame(sex,math,english)
 </div>
 <div id="data-cleaning-wrangling" class="section level1">
 <h1>Data Cleaning / Wrangling</h1>
-<pre class="r"><code>library(dplyr)</code></pre>
+<div id="tidyverse" class="section level2">
+<h2>Tidyverse</h2>
+</div>
+<div id="variables" class="section level2">
+<h2>(2) Variables</h2>
+<div id="simple-variables" class="section level3">
+<h3>Simple variables</h3>
+<p>Variables: give name/label to output, saves it (can be used anywhere below in current script)</p>
+<p>name_of_variable &lt;- code</p>
+<p>For example:</p>
+<pre class="r"><code>num_cats &lt;- 12
+
+num_cats * 3</code></pre>
+<pre><code>## [1] 36</code></pre>
+<pre class="r"><code>num_dogs &lt;- 7
+
+num_pets &lt;- num_cats + num_dogs</code></pre>
+<pre class="r"><code>num_pets</code></pre>
+<pre><code>## [1] 19</code></pre>
+<pre class="r"><code>double_cats &lt;- num_cats * 2
+double_cats</code></pre>
+<pre><code>## [1] 24</code></pre>
+<ul>
+<li><p>Variables are case sensitive (caps/lowercase matters) and can’t include spaces.</p></li>
+<li><p>Commonly snake_case</p></li>
+<li><p>You can preview your current variables in the R-Studio environment pane</p></li>
+</ul>
+<div id="try-it-out" class="section level4">
+<h4>Try it out</h4>
+<ol style="list-style-type: decimal">
+<li><p>You are planning a pizza party and want to figure out how many pieces of pizza each of your guests can eat before the pizzas run out. Create a variable called “guests” and assign it to the number of guests you have at your party: 15. (First, make a code block under this question!)</p></li>
+<li><p>You order 5 pizzas. Assign the variable “pizzas” to the amount of pizzas you have: 6. Each pizza has 12 slices. Assign the variable “slices” to the amount of slices you have over all pizzas (hint: multiple the slices per pizza by the total number of pizzas – you can use the pizzas variable here instead of retyping the number)</p></li>
+<li><p>Divide your “slices” variable by your “guests” variable to figure out how many slices each person can have.</p></li>
+<li><p>5 more people arrive to the party uninvited. Update your “guests” variable to the total number you have now. How many slices can each person have now?</p></li>
+</ol>
+</div>
+</div>
+<div id="vectors" class="section level3">
+<h3>Vectors</h3>
+<p>If you want to have multiple items of the same type: - Use a <em>vector</em> – enclosed in the syntax <code>c()</code></p>
+<ul>
+<li>command <code>length()</code> returns number of items in the vector</li>
+</ul>
+<pre class="r"><code>my_numbers &lt;- c(12, 14, 26, 57, 82)
+
+length(my_numbers)</code></pre>
+<pre><code>## [1] 5</code></pre>
+<p>You can also do “vector-wise” operations:</p>
+<pre class="r"><code>my_numbers + 2</code></pre>
+<pre><code>## [1] 14 16 28 59 84</code></pre>
+<pre class="r"><code>my_numbers ^ 2</code></pre>
+<pre><code>## [1]  144  196  676 3249 6724</code></pre>
+<pre class="r"><code>my_numbers / 10</code></pre>
+<pre><code>## [1] 1.2 1.4 2.6 5.7 8.2</code></pre>
+<p>Mathematical operation is “broadcast” to each item</p>
+<p>Add/subtract/multiply/divide a vector by another vector: items matched up one at a time in a loop</p>
+<pre class="r"><code>my_numbers + my_numbers</code></pre>
+<pre><code>## [1]  24  28  52 114 164</code></pre>
+<p>You can also take a certain item from a vector using square brackets. For example, take the first item:</p>
+<pre class="r"><code>my_numbers[1]</code></pre>
+<pre><code>## [1] 12</code></pre>
+<div id="try-it-out-1" class="section level4">
+<h4>Try it out</h4>
+<ol style="list-style-type: decimal">
+<li>Make a variable called long_array and assign it the values 1, 1, 2, 2, 5, 10 (don’t forget the <code>c()</code> syntax!)</li>
+<li>Make a variable called short_array and assign it the values 1, 6, 10</li>
+<li>Subtract short_array from long_array</li>
+<li>Subtract long_array from short_array</li>
+<li>Look at the output. What does this tell you about how R deals with vectors of different lengths?</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="data-types" class="section level2">
+<h2>(3) Data types</h2>
+<ul>
+<li>Data types – how R interprets the input you give it</li>
+<li>Figure out what type something is with <code>class()</code></li>
+</ul>
+<div id="numeric" class="section level3">
+<h3>Numeric</h3>
+<pre class="r"><code>class(8.8)</code></pre>
+<pre><code>## [1] &quot;numeric&quot;</code></pre>
+<pre class="r"><code>class(4.5113)</code></pre>
+<pre><code>## [1] &quot;numeric&quot;</code></pre>
+<pre class="r"><code>class(2)</code></pre>
+<pre><code>## [1] &quot;numeric&quot;</code></pre>
+<pre class="r"><code>fav_number &lt;- 12
+
+class(fav_number)</code></pre>
+<pre><code>## [1] &quot;numeric&quot;</code></pre>
+<ul>
+<li>Numbers generally treated as <em>numeric</em> -&gt; can include decimals</li>
+</ul>
+</div>
+<div id="integer" class="section level3">
+<h3>Integer</h3>
+<ul>
+<li><em>integer</em> allows only whole numbers -&gt; can force numbers into this form with <code>as.integer()</code>
+<ul>
+<li>this will truncate the decimal (cut it off), not round</li>
+</ul></li>
+</ul>
+<pre class="r"><code>as.integer(8.8)</code></pre>
+<pre><code>## [1] 8</code></pre>
+<pre class="r"><code>integer_variable &lt;- as.integer(8.8)
+
+integer_variable</code></pre>
+<pre><code>## [1] 8</code></pre>
+<pre class="r"><code>class(integer_variable)</code></pre>
+<pre><code>## [1] &quot;integer&quot;</code></pre>
+</div>
+<div id="character" class="section level3">
+<h3>Character</h3>
+<ul>
+<li><em>character</em> is text, always enclosed in either double or single quotation marks</li>
+</ul>
+<pre class="r"><code>class(&quot;hello&quot;)</code></pre>
+<pre><code>## [1] &quot;character&quot;</code></pre>
+<p>Uncomment the following line by deleting the hashtag (#). Check out the error here – it may sound confusing but try to identify what it is telling you.</p>
+<pre class="r"><code>my_word &lt;- &quot;hello&quot;
+class(my_word)</code></pre>
+<pre><code>## [1] &quot;character&quot;</code></pre>
+<pre class="r"><code>#my_word + 2</code></pre>
+<p>If you forget the quotes, you’ll also get an error (have to remove the comment character here to see it!)</p>
+</div>
+<div id="logical" class="section level3">
+<h3>Logical</h3>
+<ul>
+<li><em>logical</em> can be either TRUE or FALSE, nothing else.</li>
+</ul>
+<p>test if something is identical with == test if something is not identical with != test if something is greater than with &gt; or less than with &lt; or try greater than or equals to &gt;= or less than or equal to with &lt;=</p>
+<pre class="r"><code>7 &lt; 8</code></pre>
+<pre><code>## [1] TRUE</code></pre>
+<pre class="r"><code>&quot;dog&quot; == &quot;dogs&quot;</code></pre>
+<pre><code>## [1] FALSE</code></pre>
+<pre class="r"><code>8.8 &gt;= 5.6</code></pre>
+<pre><code>## [1] TRUE</code></pre>
+<pre class="r"><code>&quot;seven&quot; == 7</code></pre>
+<pre><code>## [1] FALSE</code></pre>
+<pre class="r"><code>class(&quot;seven&quot; == 7)</code></pre>
+<pre><code>## [1] &quot;logical&quot;</code></pre>
+</div>
+<div id="factor" class="section level3">
+<h3>Factor</h3>
+<p><em>factor</em> - string variables that should be treated as categories / distinct levels of a grouping -&gt; will become more relevant when we work with datasets</p>
+<ul>
+<li>Allows you to represent text as group labels, that multiple items can belong to</li>
+</ul>
+<pre class="r"><code>fav_flavors &lt;- c(&quot;chocolate&quot;, &quot;vanilla&quot;, &quot;strawberry&quot;, &quot;strawberry&quot;, &quot;chocolate&quot;, &quot;mint chocolate chip&quot;, &quot;chocolate&quot;,  &quot;vanilla&quot;, &quot;strawberry&quot;, &quot;chocolate&quot;)
+
+class(fav_flavors)</code></pre>
+<pre><code>## [1] &quot;character&quot;</code></pre>
+<pre class="r"><code>summary(fav_flavors)</code></pre>
+<pre><code>##    Length     Class      Mode 
+##        10 character character</code></pre>
+<p>Change to factor with <code>as.factor()</code></p>
+<pre class="r"><code>fav_flavors &lt;- as.factor(fav_flavors)
+
+class(fav_flavors)</code></pre>
+<pre><code>## [1] &quot;factor&quot;</code></pre>
+<pre class="r"><code>summary(fav_flavors)</code></pre>
+<pre><code>##           chocolate mint chocolate chip          strawberry             vanilla 
+##                   4                   1                   3                   2</code></pre>
+<p>Can also see the possible groupings of a factor using <code>levels()</code></p>
+<pre class="r"><code>levels(fav_flavors)</code></pre>
+<pre><code>## [1] &quot;chocolate&quot;           &quot;mint chocolate chip&quot; &quot;strawberry&quot;         
+## [4] &quot;vanilla&quot;</code></pre>
+<div id="try-it-out-2" class="section level4">
+<h4>Try it out</h4>
+<ol style="list-style-type: decimal">
+<li>Assign your name to the variable “my_name”. What data type is the variable?</li>
+<li>Try the command <code>nchar()</code> on your name variable. What does it do? Try also <code>toupper()</code>.</li>
+<li>What does nchar(my_name) &gt;= 4 return? What does this mean?</li>
+</ol>
+<p>Bonus: What does TRUE == 1 return? What about FALSE == 1? Try them both with 0 too. What does this tell you about how R deals with logical variables?</p>
+</div>
+</div>
+</div>
+<div id="packages" class="section level2">
+<h2>(4) Packages</h2>
+<div id="installing-packages" class="section level3">
+<h3>Installing packages</h3>
+<p><em>Packages</em> - extend basic R functions to add more complicated/specialized functionality</p>
+<ul>
+<li><p>CRAN: R Consortium’s host for packages – any advanced R-programmer can make and submit their packages, any R-user can download and use them</p></li>
+<li><p>Install packages once when you first use them</p>
+<ul>
+<li>command in console (or Markdown): <code>install.packages(&quot;packagename&quot;)</code></li>
+<li>or use the panel at the lower right, under the Packages tab</li>
+</ul></li>
+</ul>
+<p>Try it now with one of the most used packages by copying the following code into your console <code>install.packages(&quot;tidyverse&quot;)</code></p>
+</div>
+<div id="using-packages" class="section level3">
+<h3>Using packages</h3>
+<ul>
+<li><p><code>library()</code> command at beginning of script to use calls from that package – will only work if you’ve already installed the package</p></li>
+<li><p>Good style: load all packages in first code block</p></li>
+<li><p>Error about not finding a package? You probably don’t have it installed.</p></li>
+</ul>
+<pre class="r"><code>library(tidyverse)</code></pre>
+<pre><code>## -- Attaching packages --------------------------------------- tidyverse 1.3.1 --</code></pre>
+<pre><code>## v ggplot2 3.3.5     v purrr   0.3.4
+## v tibble  3.1.6     v dplyr   1.0.7
+## v tidyr   1.1.4     v stringr 1.4.0
+## v readr   2.1.1     v forcats 0.5.1</code></pre>
+<pre><code>## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()</code></pre>
+<p>In summary: You need to install a package once, but need to load it (using the library command) every time you start a new R session.</p>
+<div id="try-it-out-3" class="section level4">
+<h4>Try it out</h4>
+<ol style="list-style-type: decimal">
+<li>Try the following command:</li>
+</ol>
+<pre class="r"><code>#beep(2)</code></pre>
+<p>What error message do you get?</p>
+<p>Now install the package “beepr” and call the package to this session with a library call somewhere above the beep command (line above is enough.) Try running the command again (make sure your speakers are on – but not too loud :D)</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Install and -load- the “cowsay” package and try the following command:</li>
+</ol>
+<pre class="r"><code>#say(what = &quot;Good luck learning R!&quot;, by = &quot;chicken&quot;)</code></pre>
+</div>
+</div>
+</div>
+<div id="reading-in-data" class="section level2">
+<h2>(5) Reading in data</h2>
+<ul>
+<li><p>What type of file are you working with?</p>
+<ul>
+<li>Excel: go to File -&gt; Save As and select either comma-separated values (csv) or tab-separated values (tsv)</li>
+<li>Or: open the file in a text editor to see what is used to separate the columns</li>
+</ul></li>
+<li><p>Where is the file saved?</p>
+<ul>
+<li><p>working directory: the location that R should start looking for files – <code>setwd()</code></p>
+<ul>
+<li>ex: <code>setwd(~Users/kyla/Documents...)</code> or <code>setwd(C:/Documents...)</code></li>
+<li>can also use Session -&gt; Set Working Directory -&gt; Choose Directory…</li>
+</ul></li>
+<li><p>R-Markdown automatically sets the working directory to the folder you’re in</p></li>
+<li><p>once you’ve set the working directory:</p>
+<ul>
+<li>can use files with just their short names (“experiment_data.csv”)</li>
+<li>can use data in a folder (“data/experiment_data.csv”)</li>
+<li>can use ../ to go backwards one folder</li>
+</ul></li>
+</ul></li>
+<li><p>Read in the file:</p>
+<ul>
+<li>base-R: <code>read.csv()</code> and <code>read.tsv()</code></li>
+<li>tidyverse (improvements, reads as tibble instead of dataframe): <code>read_csv()</code> and <code>read_tsv()</code>
+<ul>
+<li>must have tidyverse installed and loaded with a <code>library()</code> call</li>
+<li>note: <code>read_csv2()</code> for csv files in languages that use a comma as a decimal separator and thus a semicolon as a csv separator</li>
+<li>alternatively: read_delim(file, delim = ““)</li>
+</ul></li>
+</ul></li>
+</ul>
+<p><em>Save the output to a variable.</em></p>
+<pre class="r"><code>jump_data &lt;- read_csv(&quot;jump.csv&quot;)</code></pre>
+<pre><code>## Rows: 8 Columns: 3</code></pre>
+<pre><code>## -- Column specification --------------------------------------------------------
+## Delimiter: &quot;,&quot;
+## chr (1): participant
+## dbl (2): height_cm, jump_height</code></pre>
 <pre><code>## 
-## Attaching package: &#39;dplyr&#39;</code></pre>
-<pre><code>## The following objects are masked from &#39;package:stats&#39;:
-## 
-##     filter, lag</code></pre>
-<pre><code>## The following objects are masked from &#39;package:base&#39;:
-## 
-##     intersect, setdiff, setequal, union</code></pre>
-<pre class="r"><code>library(readr)
+## i Use `spec()` to retrieve the full column specification for this data.
+## i Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<pre class="r"><code>jump_data &lt;- read_delim(&quot;jump.csv&quot;, delim = &quot;,&quot;)</code></pre>
+<pre><code>## Rows: 8 Columns: 3</code></pre>
+<pre><code>## -- Column specification --------------------------------------------------------
+## Delimiter: &quot;,&quot;
+## chr (1): participant
+## dbl (2): height_cm, jump_height</code></pre>
+<pre><code>## 
+## i Use `spec()` to retrieve the full column specification for this data.
+## i Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+<div id="exploring-your-data" class="section level2">
+<h2>(6) Exploring your data</h2>
+<p>Now you have a data file read in, but how do you see what’s in it?</p>
+<p><code>head()</code>: shows first six rows</p>
+<pre class="r"><code>head(jump_data)</code></pre>
+<pre><code>## # A tibble: 6 x 3
+##   participant height_cm jump_height
+##   &lt;chr&gt;           &lt;dbl&gt;       &lt;dbl&gt;
+## 1 A                 170          51
+## 2 B                 165          46
+## 3 C                 167          40
+## 4 D                 159          45
+## 5 E                 182          62
+## 6 F                 174          50</code></pre>
+<p>Can change the amount of rows with the n <em>argument</em></p>
+<pre class="r"><code>head(jump_data, n=3)</code></pre>
+<pre><code>## # A tibble: 3 x 3
+##   participant height_cm jump_height
+##   &lt;chr&gt;           &lt;dbl&gt;       &lt;dbl&gt;
+## 1 A                 170          51
+## 2 B                 165          46
+## 3 C                 167          40</code></pre>
+<p>Or: click name of dataframe in Environment tab - can also sort columns and Filter rows – just for viewing purposes - bit slow if you start having huge dataframes but often a good first look</p>
+<p><code>summary()</code>: call it on a dataframe to get each column and useful info based on the data type. For example, numeric columns will show the min, median, max and the quartiles (25% increments).</p>
+<pre class="r"><code>summary(jump_data)</code></pre>
+<pre><code>##  participant          height_cm      jump_height   
+##  Length:8           Min.   :159.0   Min.   :31.00  
+##  Class :character   1st Qu.:164.2   1st Qu.:39.50  
+##  Mode  :character   Median :166.0   Median :45.50  
+##                     Mean   :168.0   Mean   :45.38  
+##                     3rd Qu.:171.0   3rd Qu.:50.25  
+##                     Max.   :182.0   Max.   :62.00</code></pre>
+<div id="try-it-out-4" class="section level4">
+<h4>Try it out</h4>
+<ol style="list-style-type: decimal">
+<li>Download the three “penguin_data” files and save them in the same location as this Markdown. They all contain the same data, but it’s saved in slightly different formats, so you need to read them each in with a different command. Make sure to save them to variables.</li>
+<li>Take a look at your dataframe in the Environment tab.</li>
+<li>Try the command <code>colnames()</code> on the variable you saved the dataframe to. What does it do?</li>
+<li>We already tried the <code>head()</code> command, now try the <code>tail()</code> command. What does it do?</li>
+</ol>
+</div>
+</div>
+<div id="columns" class="section level2">
+<h2>(7) Columns</h2>
+<ul>
+<li>specific column call with dataframe_name$column_name</li>
+</ul>
+<p>R-Studio will helpfully suggest the column names as soon as it sees the $</p>
+<pre class="r"><code>jump_data$participant</code></pre>
+<pre><code>## [1] &quot;A&quot; &quot;B&quot; &quot;C&quot; &quot;D&quot; &quot;E&quot; &quot;F&quot; &quot;G&quot; &quot;H&quot;</code></pre>
+<pre class="r"><code>jump_data$height_cm</code></pre>
+<pre><code>## [1] 170 165 167 159 182 174 162 165</code></pre>
+<div id="descriptive-stats" class="section level3">
+<h3>Descriptive stats</h3>
+<p>Basic descriptive statistics for numeric columns – mean, median and range</p>
+<pre class="r"><code>mean(jump_data$height_cm)</code></pre>
+<pre><code>## [1] 168</code></pre>
+<pre class="r"><code>range(jump_data$height_cm)</code></pre>
+<pre><code>## [1] 159 182</code></pre>
+<pre class="r"><code>median(jump_data$height_cm)</code></pre>
+<pre><code>## [1] 166</code></pre>
+<pre class="r"><code>summary(jump_data$height_cm)</code></pre>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##   159.0   164.2   166.0   168.0   171.0   182.0</code></pre>
+<div id="try-it-out-5" class="section level4">
+<h4>Try it out</h4>
+<ol style="list-style-type: decimal">
+<li>Use the penguin dataset. What is the range of flipper lengths?</li>
+<li>Save the mean body mass to a variable called “average_bodymass”. This number is in grams. What would the equivalent be in kilograms? Hint: Divide by 1000.</li>
+</ol>
+</div>
+</div>
+<div id="categorical-columns" class="section level3">
+<h3>Categorical columns</h3>
+<p>The penguins data contains information on several different penguin species. But how many, exactly? Let’s try to use ‘summary’ to extract that information:</p>
+<pre class="r"><code>penguins &lt;- read_tsv(&quot;penguin_data_3.txt&quot;)</code></pre>
+<pre><code>## Rows: 344 Columns: 8</code></pre>
+<pre><code>## -- Column specification --------------------------------------------------------
+## Delimiter: &quot;\t&quot;
+## chr (3): species, island, sex
+## dbl (5): bill_length_mm, bill_depth_mm, flipper_length_mm, body_mass_g, year</code></pre>
+<pre><code>## 
+## i Use `spec()` to retrieve the full column specification for this data.
+## i Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<pre class="r"><code>summary(penguins$species)</code></pre>
+<pre><code>##    Length     Class      Mode 
+##       344 character character</code></pre>
+<ul>
+<li>Summary on a character column shows that each entry is seen as different and not comparable.</li>
+<li>This is a character (the default for text data)</li>
+<li>But should be a factor</li>
+<li>Factors represent groups (participant, conditions, etc.)</li>
+<li>We can use <code>class</code> on a variable to have R show us which data type it is:</li>
+</ul>
+<pre class="r"><code>class(penguins$species)</code></pre>
+<pre><code>## [1] &quot;character&quot;</code></pre>
+<pre class="r"><code>class(penguins$bill_length_mm)</code></pre>
+<pre><code>## [1] &quot;numeric&quot;</code></pre>
+<ul>
+<li>Change a character column into a factor using <code>as_factor()</code>
+<ul>
+<li>Overwrite the original column</li>
+</ul></li>
+</ul>
+<pre class="r"><code>penguins$species &lt;- as_factor(penguins$species)
+
+class(penguins$species)</code></pre>
+<pre><code>## [1] &quot;factor&quot;</code></pre>
+<pre class="r"><code>summary(penguins$species)</code></pre>
+<pre><code>##    Adelie    Gentoo Chinstrap 
+##       152       124        68</code></pre>
+<ul>
+<li>Quick reference: check the environment tab upper-right</li>
+</ul>
+<div id="try-it-out-6" class="section level4">
+<h4>Try it out</h4>
+<ol style="list-style-type: decimal">
+<li>Which other variables in the penguins data should be factors? Change them using the same code we used above.</li>
+<li>How many entries from penguins who live on the “Dream” island are there?</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="the-pipe-operator" class="section level2">
+<h2>(8) The pipe operator</h2>
+<p>The pipe %&gt;% is a command from the magrittr package (which is included in tidyverse, so no need to load it explicitly). When the pipe is used, the output from the first line is automatically passed to the second line. Specifically, the output is used as the first argument of the next command. Use Control + Shift + M to automatically insert %&gt;%</p>
+<pre class="r"><code>summary(penguins)</code></pre>
+<pre><code>##       species       island          bill_length_mm  bill_depth_mm  
+##  Adelie   :152   Length:344         Min.   :32.10   Min.   :13.10  
+##  Gentoo   :124   Class :character   1st Qu.:39.23   1st Qu.:15.60  
+##  Chinstrap: 68   Mode  :character   Median :44.45   Median :17.30  
+##                                     Mean   :43.92   Mean   :17.15  
+##                                     3rd Qu.:48.50   3rd Qu.:18.70  
+##                                     Max.   :59.60   Max.   :21.50  
+##                                     NA&#39;s   :2       NA&#39;s   :2      
+##  flipper_length_mm  body_mass_g       sex                 year     
+##  Min.   :172.0     Min.   :2700   Length:344         Min.   :2007  
+##  1st Qu.:190.0     1st Qu.:3550   Class :character   1st Qu.:2007  
+##  Median :197.0     Median :4050   Mode  :character   Median :2008  
+##  Mean   :200.9     Mean   :4202                      Mean   :2008  
+##  3rd Qu.:213.0     3rd Qu.:4750                      3rd Qu.:2009  
+##  Max.   :231.0     Max.   :6300                      Max.   :2009  
+##  NA&#39;s   :2         NA&#39;s   :2</code></pre>
+<pre class="r"><code># is equivalent to:
+penguins %&gt;% # the line break here is optional, but makes the code more readable
+  summary()</code></pre>
+<pre><code>##       species       island          bill_length_mm  bill_depth_mm  
+##  Adelie   :152   Length:344         Min.   :32.10   Min.   :13.10  
+##  Gentoo   :124   Class :character   1st Qu.:39.23   1st Qu.:15.60  
+##  Chinstrap: 68   Mode  :character   Median :44.45   Median :17.30  
+##                                     Mean   :43.92   Mean   :17.15  
+##                                     3rd Qu.:48.50   3rd Qu.:18.70  
+##                                     Max.   :59.60   Max.   :21.50  
+##                                     NA&#39;s   :2       NA&#39;s   :2      
+##  flipper_length_mm  body_mass_g       sex                 year     
+##  Min.   :172.0     Min.   :2700   Length:344         Min.   :2007  
+##  1st Qu.:190.0     1st Qu.:3550   Class :character   1st Qu.:2007  
+##  Median :197.0     Median :4050   Mode  :character   Median :2008  
+##  Mean   :200.9     Mean   :4202                      Mean   :2008  
+##  3rd Qu.:213.0     3rd Qu.:4750                      3rd Qu.:2009  
+##  Max.   :231.0     Max.   :6300                      Max.   :2009  
+##  NA&#39;s   :2         NA&#39;s   :2</code></pre>
+<pre class="r"><code>head(penguins, n = 4)</code></pre>
+<pre><code>## # A tibble: 4 x 8
+##   species island bill_length_mm bill_depth_mm flipper_length_~ body_mass_g sex  
+##   &lt;fct&gt;   &lt;chr&gt;           &lt;dbl&gt;         &lt;dbl&gt;            &lt;dbl&gt;       &lt;dbl&gt; &lt;chr&gt;
+## 1 Adelie  Torge~           39.1          18.7              181        3750 male 
+## 2 Adelie  Torge~           39.5          17.4              186        3800 fema~
+## 3 Adelie  Torge~           40.3          18                195        3250 fema~
+## 4 Adelie  Torge~           NA            NA                 NA          NA &lt;NA&gt; 
+## # ... with 1 more variable: year &lt;dbl&gt;</code></pre>
+<pre class="r"><code># is equivalent to:
+penguins %&gt;% 
+  head(n = 4)</code></pre>
+<pre><code>## # A tibble: 4 x 8
+##   species island bill_length_mm bill_depth_mm flipper_length_~ body_mass_g sex  
+##   &lt;fct&gt;   &lt;chr&gt;           &lt;dbl&gt;         &lt;dbl&gt;            &lt;dbl&gt;       &lt;dbl&gt; &lt;chr&gt;
+## 1 Adelie  Torge~           39.1          18.7              181        3750 male 
+## 2 Adelie  Torge~           39.5          17.4              186        3800 fema~
+## 3 Adelie  Torge~           40.3          18                195        3250 fema~
+## 4 Adelie  Torge~           NA            NA                 NA          NA &lt;NA&gt; 
+## # ... with 1 more variable: year &lt;dbl&gt;</code></pre>
+<div id="try-it-out-7" class="section level4">
+<h4>Try it out</h4>
+<p>Look at the last three lines of the penguins data (hint: <code>tail</code>). Use the base R command, then try to rewrite it with the pipe %&gt;%</p>
+</div>
+</div>
+<div id="conclusion" class="section level2">
+<h2>(9) Conclusion</h2>
+<ul>
+<li>Installed R, R-Studio</li>
+<li>R-Markdown</li>
+<li>variables</li>
+<li>data types: numeric, integer, character, factor, vector</li>
+<li>installing &amp; loading packages</li>
+<li>reading in files</li>
+<li>looking at dataframes in R</li>
+</ul>
+<p>Next time:<br />
+- tidyverse<br />
+- rename columns<br />
+- make new columns<br />
+- reorder<br />
+- filter based on condition<br />
+- etc.</p>
+<div id="reading" class="section level3">
+<h3>Reading</h3>
+<p>As a follow-up to this tutorial, you might want to read chapters 3.3 - 3.9 in Navarro, Learning Statistics with R (p. 46 - 66).</p>
+</div>
+</div>
+<div id="deplyr" class="section level2">
+<h2>Deplyr</h2>
+<pre class="r"><code>library(dplyr)
+library(readr)
 billboard100 &lt;- read_csv(&quot;charts.csv&quot;)</code></pre>
 <pre><code>## Rows: 330087 Columns: 7</code></pre>
 <pre><code>## -- Column specification --------------------------------------------------------
@@ -528,6 +1065,7 @@ music_df</code></pre>
 <pre><code>## Selecting by n</code></pre>
 <pre class="r"><code>library(ggplot2)</code></pre>
 <!--chapter:end:03-Data-Cleaning.Rmd-->
+</div>
 </div>
 <div id="data-manipulation" class="section level1">
 <h1>Data Manipulation</h1>
@@ -654,19 +1192,8 @@ head(df2)</code></pre>
 <div id="selecting-columns-and-rows" class="section level2">
 <h2>Selecting Columns and Rows</h2>
 <pre class="r"><code># for the function below we need tidyverse package
-library(tidyverse)</code></pre>
-<pre><code>## -- Attaching packages --------------------------------------- tidyverse 1.3.1 --</code></pre>
-<pre><code>## v tibble  3.1.6     v forcats 0.5.1
-## v purrr   0.3.4</code></pre>
-<pre><code>## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
-## x lubridate::as.difftime() masks base::as.difftime()
-## x lubridate::date()        masks base::date()
-## x dplyr::filter()          masks stats::filter()
-## x lubridate::intersect()   masks base::intersect()
-## x dplyr::lag()             masks stats::lag()
-## x lubridate::setdiff()     masks base::setdiff()
-## x lubridate::union()       masks base::union()</code></pre>
-<pre class="r"><code># Selecting column
+library(tidyverse)
+# Selecting column
 
 df_f4= select(df,-5)
 head(df_f4)</code></pre>

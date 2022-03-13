@@ -12,3 +12,93 @@ output:
 
 # About {.unnumbered}
 
+*Why should you learn R?*
+
+It's...
+
+- totally free!
+
+- open-source
+
+- a scripting language (reproducible and transparent)
+
+- an established tool with tons of tutorials and help pages 
+
+- an amazing and inclusive community 
+
+
+## First steps {.unnumbered}
+
+R = programming language that can be written directly into your computer's console/terminal
+
+R-Studio = integrated development environment (IDE) with lots of features
+
+Almost all R-users have both installed 
+
+
+### R-Studio {.unnumbered}
+
+Four panels: 
+
+Top-left: scripting panel -- write and save code (may only open when you open a new file)
+
+Bottom-left: console panel -- input/output that won't be saved
+
+Top-right: environment panel -- dataframes, variables (and sometimes has other features too, depending on what you're working with)
+
+Bottom-right: install and update packages, preview plots, read help files, and some other features
+
+
+### R script (.R) {.unnumbered}
+
+File -> New File -> R Script 
+
+- simple: only code
+
+- write lines of code in the order they are meant to be run
+
+- run each line by clicking that line and pressing Control + R (on Windows) or Cmd + Enter (on Mac)
+
+- output shows below, in console panel (number in bracket shows amount of output if there is more than one line)
+
+- Try it out: 5 + 5 
+
+- comments that are not read as code: #
+
+
+
+### R-Markdown file (.Rmd) {.unnumbered}
+
+File -> New File -> R Markdown
+
+- R-Markdown: more complex, both code and text, can also include images and some basic formatting (## for headers)
+
+- YAML information at top:
+
+  ---
+  title: "Intro to R"
+  author: "Kyla McConnell"
+  date: "12/21/2020"
+  output: html_document
+  ---
+
+- text in whitespace = text (unlike in an R script)
+  - keep notes or leave a record of your decisions
+
+- code needs a code chunk -- type it with three backticks or use Insert in the top bar and select R
+  
+```{r}
+
+```
+
+Run code: 
+- press Control + R (on Windows) or Cmd + Enter (on Mac) with your cursor in the line
+- use green right-pointing arrow at right edge of code block
+- arrow with line under it -> runs all code chunks above (but not the current one)
+
+Output: 
+- directly below code block in preview window
+
+- Can also use (#) to denote lines that are comments and shouldn't be read as R code
+
+
