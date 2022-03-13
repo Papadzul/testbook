@@ -1,9 +1,14 @@
 --- 
-title: "YOUR TITLE HERE"
-author: "YOUR NAME HERE"
+knit: "bookdown::render_book"
+title: "MATH6200"
+author: "Dennis E. Cabais"
 date: "`r Sys.Date()`"
+cover-image: "cover.png"
 site: bookdown::bookdown_site
+output: 
+  html_document: 
+    theme: journal
 ---
 
-# Down the rabbit-hole
+# About {.unnumbered}
 

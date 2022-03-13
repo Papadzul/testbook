@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Week 2 A caucus-race and a long tale | MATH6200</title>
-  <meta name="description" content="Week 2 A caucus-race and a long tale | MATH6200" />
+  <title>Week 1 Data in R | MATH6200</title>
+  <meta name="description" content="Week 1 Data in R | MATH6200" />
   <meta name="generator" content="bookdown 0.24.4 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Week 2 A caucus-race and a long tale | MATH6200" />
+  <meta property="og:title" content="Week 1 Data in R | MATH6200" />
   <meta property="og:type" content="book" />
   
   <meta property="og:image" content="/cover.png" />
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Week 2 A caucus-race and a long tale | MATH6200" />
+  <meta name="twitter:title" content="Week 1 Data in R | MATH6200" />
   
   
   <meta name="twitter:image" content="/cover.png" />
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="data-in-r.html"/>
-
+<link rel="prev" href="index.html"/>
+<link rel="next" href="data-cleaning-wrangling.html"/>
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -148,7 +148,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.2.3" data-path="data-in-r.html"><a href="data-in-r.html#importing-from-csv-file"><i class="fa fa-check"></i><b>1.2.3</b> Importing from csv file</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="a-caucus-race-and-a-long-tale.html"><a href="a-caucus-race-and-a-long-tale.html"><i class="fa fa-check"></i><b>2</b> A caucus-race and a long tale</a></li>
+<li class="chapter" data-level="2" data-path="data-cleaning-wrangling.html"><a href="data-cleaning-wrangling.html"><i class="fa fa-check"></i><b>2</b> Data Cleaning / Wrangling</a></li>
+<li class="chapter" data-level="3" data-path="week-4.html"><a href="week-4.html"><i class="fa fa-check"></i><b>3</b> Week 4</a></li>
+<li class="chapter" data-level="4" data-path="week-5.html"><a href="week-5.html"><i class="fa fa-check"></i><b>4</b> Week 5</a></li>
+<li class="chapter" data-level="5" data-path="week-6.html"><a href="week-6.html"><i class="fa fa-check"></i><b>5</b> Week 6</a></li>
+<li class="chapter" data-level="6" data-path="week-7.html"><a href="week-7.html"><i class="fa fa-check"></i><b>6</b> Week 7</a></li>
+<li class="chapter" data-level="7" data-path="week-8.html"><a href="week-8.html"><i class="fa fa-check"></i><b>7</b> Week 8</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 </ul>
@@ -168,17 +173,63 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="a-caucus-race-and-a-long-tale" class="section level1" number="2">
-<h1><span class="header-section-number">Week 2</span> A caucus-race and a long tale</h1>
+<div id="data-in-r" class="section level1" number="1">
+<h1><span class="header-section-number">Week 1</span> Data in R</h1>
+<div id="creating-data-in-r" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Creating Data in R</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="data-in-r.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Data creation</span></span>
+<span id="cb1-2"><a href="data-in-r.html#cb1-2" aria-hidden="true" tabindex="-1"></a>sex <span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">&quot;M&quot;</span>,<span class="st">&quot;F&quot;</span>,<span class="st">&quot;M&quot;</span>,<span class="st">&quot;F&quot;</span>,<span class="st">&quot;M&quot;</span>,<span class="st">&quot;F&quot;</span>,<span class="st">&quot;M&quot;</span>,<span class="st">&quot;F&quot;</span>,<span class="st">&quot;M&quot;</span>,<span class="st">&quot;F&quot;</span>)</span>
+<span id="cb1-3"><a href="data-in-r.html#cb1-3" aria-hidden="true" tabindex="-1"></a>math <span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">85</span>,<span class="dv">90</span>, <span class="dv">88</span>,<span class="dv">90</span>,<span class="dv">99</span>,<span class="dv">87</span>,<span class="dv">88</span>,<span class="dv">79</span>,<span class="dv">80</span>,<span class="dv">10</span>)</span>
+<span id="cb1-4"><a href="data-in-r.html#cb1-4" aria-hidden="true" tabindex="-1"></a>english <span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">80</span>, <span class="dv">90</span>,<span class="dv">87</span>,<span class="dv">78</span>,<span class="dv">79</span>,<span class="dv">90</span>,<span class="dv">99</span>,<span class="dv">90</span>,<span class="dv">80</span>,<span class="dv">88</span>)</span>
+<span id="cb1-5"><a href="data-in-r.html#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># data frame</span></span>
+<span id="cb1-6"><a href="data-in-r.html#cb1-6" aria-hidden="true" tabindex="-1"></a>data1.data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(sex,math,english)</span>
+<span id="cb1-7"><a href="data-in-r.html#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">#vaccine &lt;- read.csv(&quot;paste&quot;)</span></span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="data-in-r.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(data1.data,<span class="dv">10</span>)</span></code></pre></div>
+<pre><code>##    sex math english
+## 1    M   85      80
+## 2    F   90      90
+## 3    M   88      87
+## 4    F   90      78
+## 5    M   99      79
+## 6    F   87      90
+## 7    M   88      99
+## 8    F   79      90
+## 9    M   80      80
+## 10   F   10      88</code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="data-in-r.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span>(data1.data)</span></code></pre></div>
+<pre><code>##    sex math english
+## 5    M   99      79
+## 6    F   87      90
+## 7    M   88      99
+## 8    F   79      90
+## 9    M   80      80
+## 10   F   10      88</code></pre>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="data-in-r.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">min</span>(data1.data<span class="sc">$</span>math)</span></code></pre></div>
+<pre><code>## [1] 10</code></pre>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="data-in-r.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">max</span>(data1.data<span class="sc">$</span>english)</span></code></pre></div>
+<pre><code>## [1] 99</code></pre>
+</div>
+<div id="importing-data-to-r" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> Importing Data to R</h2>
+<div id="importing-from-excel-file" class="section level3" number="1.2.1">
+<h3><span class="header-section-number">1.2.1</span> Importing from excel file</h3>
+</div>
+<div id="importing-from-webpage" class="section level3" number="1.2.2">
+<h3><span class="header-section-number">1.2.2</span> Importing from webpage</h3>
+</div>
+<div id="importing-from-csv-file" class="section level3" number="1.2.3">
+<h3><span class="header-section-number">1.2.3</span> Importing from csv file</h3>
 
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="data-in-r.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="data-cleaning-wrangling.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -209,7 +260,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/YOUR GITHUB USERNAME/YOUR REPO NAME/edit/master/03-datacleaning.Rmd",
+"link": "https://github.com/YOUR GITHUB USERNAME/YOUR REPO NAME/edit/master/02-Dat-in-R.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -217,7 +268,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/YOUR GITHUB USERNAME/YOUR REPO NAME/blob/master/03-datacleaning.Rmd",
+"link": "https://github.com/YOUR GITHUB USERNAME/YOUR REPO NAME/blob/master/02-Dat-in-R.Rmd",
 "text": null
 },
 "download": null,
